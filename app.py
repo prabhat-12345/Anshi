@@ -4,11 +4,11 @@ import os
 # Custom canvas page configurations for an elite setup
 st.set_page_config(page_title="Happy Birthday Anshika! ✨", page_icon="🎓", layout="centered")
 
-# Continuous automatic snowfall & balloons animation trigger instantly
+# 100% FORCEFUL AUTOMATIC RUNTIME ANIMATIONS (Tiggers instantly on page load)
 st.snow()
 st.balloons()
 
-# Intense Shifting Red Canvas & Rigid HTML Table Grid Formatting
+# Intense Shifting Red Canvas & Fixed Layout Styles
 st.markdown("""
     <style>
     /* 1. LIQUID NEON SHIFTING INTENSE RED BACKGROUND */
@@ -66,7 +66,7 @@ st.markdown("""
         margin-bottom: 25px;
     }
 
-    @keyframes greenLightShine {
+    @webkit-keyframes greenLightShine {
         0% { background-position: 0% 50%; }
         100% { background-position: 100% 50%; }
     }
@@ -76,28 +76,8 @@ st.markdown("""
         100% { filter: drop-shadow(0 0 35px rgba(0, 235, 0, 0.9)); }
     }
 
-    /* 4. HARD-LOCKED FIXED LAYOUT */
-    .layout-box {
-        display: flex !important;
-        flex-direction: row !important;
-        align-items: center !important;
-        justify-content: space-between !important;
-        width: 100% !important;
-        gap: 15px !important;
-        margin: 20px 0 !important;
-    }
-
-    .photo-side {
-        width: 50% !important;
-    }
-
-    .text-side {
-        width: 50% !important;
-    }
-
-    /* 5. GORGEOUS ROMANTIC DECORATED RED NEON PHOTO FRAME */
-    .photo-side img {
-        width: 100% !important;
+    /* 4. GORGEOUS ROMANTIC DECORATED RED NEON PHOTO FRAME */
+    .stImage > img {
         border-radius: 20px !important;
         border: 4px solid #ff004c !important;
         box-shadow: 0 0 20px #ff004c, 0 10px 30px rgba(255,0,76,0.6) !important;
@@ -110,7 +90,7 @@ st.markdown("""
         100% { border-color: #ffffff; filter: drop-shadow(0 0 20px #ff7675); }
     }
 
-    /* 6. ROMANTIC DECORATIVE INNER CONTAINER IN RIGHT COLUMN */
+    /* 5. ROMANTIC DECORATIVE INNER CONTAINER IN RIGHT COLUMN */
     .dynamic-love-board {
         background: rgba(30, 0, 4, 0.95) !important;
         color: #ffffff !important;
@@ -143,7 +123,7 @@ st.markdown("""
         to { transform: scale(1.15); }
     }
 
-    /* 7. CONTINUOUS FAST DHADAKTA HUA DIL ENGINE */
+    /* 6. CONTINUOUS FAST DHADAKTA HUA DIL ENGINE */
     .heart-engine-box {
         margin: 30px 0;
     }
@@ -160,7 +140,7 @@ st.markdown("""
         100% { transform: scale(1.22) rotate(-3deg); filter: drop-shadow(0 0 45px #ff0000); }
     }
 
-    /* 8. ELITE ENGLISH MOTIVATIONAL SCROLL CARDS */
+    /* 7. ELITE ENGLISH MOTIVATIONAL SCROLL CARDS */
     .classy-scroll-card {
         background: rgba(30, 0, 4, 0.96);
         font-size: 1.25rem !important;
@@ -191,7 +171,7 @@ st.markdown("""
         margin-bottom: 15px;
     }
 
-    /* 9. TYPEWRITER BOX ENGINE */
+    /* 8. TYPEWRITER BOX ENGINE */
     .typewriter-box {
         margin: 35px 0;
         background: rgba(0, 0, 0, 0.4);
@@ -235,17 +215,13 @@ st.markdown('<p class="sender-tag">🎓 WISHING AN EXCEPTIONAL STUDENT ✨</p>',
 # THE GRAND SHINY HAPPY BIRTHDAY BOLD TITLE
 st.markdown('<h1 class="giant-neon-birthday">HAPPY BIRTHDAY<br>ANSHIKA 🌹</h1>', unsafe_allow_html=True)
 
-# --- STRICT MULTI-COLUMN SIDE-BY-SIDE FRAMEWORK ---
+# --- SIDE-BY-SIDE FIXED LAYOUT GRID ---
 target_photo = "rotated_photo_only~2.jpg"
 
-st.markdown('<div class="stable-inline-flex">', unsafe_allow_html=True)
-
-# Creating clean layout containers using Streamlit columns to display image and card side-by-side perfectly
 col1, col2 = st.columns(2)
 
 with col1:
     if os.path.exists(target_photo):
-        # Native local path handler to directly render the file without link breaking issues
         st.image(target_photo, use_container_width=True)
     else:
         st.image("https://unsplash.com", use_container_width=True)
@@ -258,8 +234,6 @@ with col2:
             <div><span class="heart-bullet">✨</span> Absolute Grace 💘</div>
         </div>
     """, unsafe_allow_html=True)
-
-st.markdown('</div>', unsafe_allow_html=True)
 
 # THE DYNAMIC FAST DHADAKTA HUA DIL ENGINE
 st.markdown('<div class="heart-engine-box"><span class="ultimate-fast-heart">❤️</span></div>', unsafe_allow_html=True)
