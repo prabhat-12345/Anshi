@@ -4,11 +4,11 @@ import os
 # Custom canvas page configurations for an elite setup
 st.set_page_config(page_title="Happy Birthday Anshika! ✨", page_icon="🎓", layout="centered")
 
-# 100% Forceful Automatic Animations on page load
+# Forceful Automatic Animations on page load
 st.snow()
 st.balloons()
 
-# Intense Shifting Red Canvas, Rigid layout & SVG Heart Tracing Animation
+# Intense Shifting Red Canvas, Rigid layout & Fixed SVG Tracing Animation
 st.markdown("""
     <style>
     /* 1. LIQUID NEON SHIFTING INTENSE RED BACKGROUND */
@@ -140,7 +140,7 @@ st.markdown("""
         100% { transform: scale(1.22) rotate(-3deg); filter: drop-shadow(0 0 45px #ff0000); }
     }
 
-    /* 7. HIGH-LEVEL HTML SVG STROKE DRAWING HEART (Gol ghum ke poora banna) */
+    /* 7. HIGH-LEVEL HTML SVG STROKE DRAWING HEART TOOL */
     .svg-heart-container {
         display: flex;
         justify-content: center;
@@ -235,7 +235,7 @@ st.markdown("""
 st.markdown('<div class="screenshot-layout-shell">', unsafe_allow_html=True)
 
 # RESPECTFUL TOP TAG
-st.markdown('<p class="sender-tag">🎓 WISHING AN EXCEPTIONAL STUDENT SIGNATURE ✨</p>', unsafe_allow_html=True)
+st.markdown('<p class="sender-tag">🎓 WISHING AN EXCEPTIONAL STUDENT ✨</p>', unsafe_allow_html=True)
 
 # THE GRAND SHINY HAPPY BIRTHDAY BOLD TITLE
 st.markdown('<h1 class="giant-neon-birthday">HAPPY BIRTHDAY<br>ANSHIKA 🌹</h1>', unsafe_allow_html=True)
@@ -271,7 +271,7 @@ st.markdown("""
     </div>
 """, unsafe_allow_html=True)
 
-# --- NEW: HIGH-LEVEL INLINE SVG STRUCTURAL VECTOR TRACING HEART (Dhire dhire gol ghum ke poora banna) ---
+# --- STABLE INLINE SVG STRUCTURAL VECTOR TRACING HEART (Dhire dhire gol ghum ke poora banna) ---
 st.markdown("""
     <div class="svg-heart-container">
         <svg width="120" height="120" viewBox="0 0 32 32">
@@ -287,4 +287,5 @@ st.markdown("""
         <span class="chapter-tag">🚀 THE VISION OF SUCCESS 🏆</span>
         "May this special day bring you great inspiration and open new avenues for your growth and research. Stay relentless in your pursuit of knowledge, and may you reach the absolute pinnacle of success in your future career. Have a wonderful birthday! 🚀🏆"
     </div>
-    
+""", unsafe_allow_html=True)
+
