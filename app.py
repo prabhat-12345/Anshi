@@ -8,7 +8,7 @@ st.set_page_config(page_title="Happy Birthday Anshika! ✨", page_icon="🎓", l
 st.snow()
 st.balloons()
 
-# 100% Pure Intense Liquid Red Canvas, Side-by-Side Frames & Heart Overlays
+# 100% Strict Mobile Flex Layout - No vertical stacking allowed
 st.markdown("""
     <style>
     /* 1. LIQUID NEON SHIFTING BACKGROUND */
@@ -31,17 +31,17 @@ st.markdown("""
         text-align: center;
         max-width: 600px;
         margin: auto;
-        padding: 10px;
+        padding: 5px;
     }
 
     /* 2. MENTOR TOP SENDER TAG WITH PULSING AURA */
     .sender-tag {
-        font-size: 1.15rem;
+        font-size: 1.1rem;
         font-weight: bold;
         color: #ff7675;
         letter-spacing: 3px;
         text-transform: uppercase;
-        margin-top: 20px;
+        margin-top: 15px;
         animation: textPulse 2s infinite alternate;
     }
 
@@ -52,7 +52,7 @@ st.markdown("""
 
     /* 3. DYNAMIC EMERALD GREEN HAPPY BIRTHDAY HEADER WITH DYNAMIC COLOR WAVE */
     .giant-neon-birthday {
-        font-size: 3.8rem !important;
+        font-size: 3.2rem !important;
         font-weight: 900 !important;
         text-transform: uppercase;
         line-height: 1.2;
@@ -62,8 +62,8 @@ st.markdown("""
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         animation: greenLightShine 4s linear infinite, greenExtremeGlow 2s ease-in-out infinite alternate;
-        margin-top: 15px;
-        margin-bottom: 25px;
+        margin-top: 10px;
+        margin-bottom: 20px;
     }
 
     @keyframes greenLightShine {
@@ -76,46 +76,66 @@ st.markdown("""
         100% { filter: drop-shadow(0 0 35px rgba(0, 235, 0, 0.9)); }
     }
 
-    /* 4. PREMIUM DECORATED ROMANTIC PHOTO FRAME PACK */
-    .stImage > img {
-        border-radius: 20px !important;
-        border: 4px solid #ff4d6d !important;
-        box-shadow: 0 0 25px #ff004c, 0 15px 45px rgba(255, 0, 76, 0.8) !important;
-        transition: transform 0.4s ease-in-out !important;
+    /* 4. FORCE CO-EXISTENCE RIGID ROW BLOCK (Bypasses Streamlit stack crash) */
+    .flex-side-by-side {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        width: 100% !important;
+        margin: 20px 0 !important;
+        gap: 12px !important;
+    }
+
+    .left-photo-container {
+        flex: 1.1 !important;
+        max-width: 50% !important;
+    }
+
+    .left-photo-container img {
+        width: 100% !important;
+        border-radius: 15px !important;
+        border: 3px solid #ff4d6d !important;
+        box-shadow: 0 0 20px #ff004c !important;
         animation: framePulse 3s infinite alternate !important;
+        display: block;
     }
 
     @keyframes framePulse {
-        0% { border-color: #ff004c; box-shadow: 0 0 15px #ff004c; }
-        100% { border-color: #ffffff; box-shadow: 0 0 35px #ff4d6d; }
+        0% { border-color: #ff004c; box-shadow: 0 0 10px #ff004c; }
+        100% { border-color: #ffffff; box-shadow: 0 0 25px #ff4d6d; }
+    }
+
+    .right-decor-container {
+        flex: 1 !important;
+        max-width: 48% !important;
     }
 
     /* 5. GORGEOUS ROMANTIC SIDE PANEL STYLING WITH EMOJIS */
     .side-text-panel {
-        background: rgba(35, 0, 5, 0.92);
-        color: #ffffff;
-        font-size: 1.35rem;
-        font-weight: bold;
-        padding: 25px 15px;
-        border-radius: 20px;
-        border: 2px solid #ff004c;
-        box-shadow: 0 10px 30px rgba(255,0,76,0.5);
-        text-align: center;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        animation: panelShift 4s infinite alternate;
+        background: rgba(35, 0, 5, 0.92) !important;
+        color: #ffffff !important;
+        font-size: 1.15rem !important;
+        font-weight: bold !important;
+        padding: 15px 10px !important;
+        border-radius: 15px !important;
+        border: 2px solid #ff004c !important;
+        box-shadow: 0 8px 20px rgba(255, 0, 76, 0.5) !important;
+        text-align: center !important;
+        animation: panelShift 4s infinite alternate !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 12px !important;
     }
 
     @keyframes panelShift {
-        0% { border-color: #ff004c; box-shadow: 0 0 15px rgba(255,0,76,0.4); }
-        100% { border-color: #ff7675; box-shadow: 0 0 30px rgba(255,118,117,0.6); }
+        0% { border-color: #ff004c; box-shadow: 0 0 12px rgba(255,0,76,0.4); }
+        100% { border-color: #ff7675; box-shadow: 0 0 25px rgba(255,118,117,0.6); }
     }
 
     .heart-bullet {
         color: #ff004c;
-        font-size: 1.6rem;
+        font-size: 1.3rem;
         display: inline-block;
         animation: miniBeat 0.6s infinite alternate;
     }
@@ -144,14 +164,14 @@ st.markdown("""
     /* 7. CLASSY ACADEMIC MOTIVATIONAL BOARDS */
     .classy-scroll-card {
         background: rgba(30, 0, 4, 0.96);
-        font-size: 1.25rem !important;
+        font-size: 1.2rem !important;
         font-weight: 500;
         line-height: 1.6;
-        padding: 35px 25px;
+        padding: 30px 20px;
         border-radius: 20px;
         border: 2px solid;
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin-top: 25px;
+        margin-bottom: 25px;
         text-align: center;
         box-shadow: 0 12px 35px rgba(0,0,0,0.7);
         animation: cardColorShift 6s infinite alternate;
@@ -164,25 +184,25 @@ st.markdown("""
 
     .chapter-tag {
         display: block;
-        font-size: 0.95rem;
+        font-size: 0.9rem;
         font-weight: 800;
         text-transform: uppercase;
         letter-spacing: 3px;
         color: #ff4d6d;
-        margin-bottom: 15px;
+        margin-bottom: 12px;
     }
 
     /* 8. HIGH-LEVEL TYPEWRITER ENGINE */
     .typewriter-box {
-        margin: 35px 0;
+        margin: 30px 0;
         background: rgba(0, 0, 0, 0.4);
-        padding: 25px 15px;
+        padding: 20px 10px;
         border-radius: 15px;
         border: 1px dashed #ff4d6d;
     }
 
     .typewriter-text {
-        font-size: 1.65rem;
+        font-size: 1.5rem;
         font-weight: bold;
         color: #ffffff;
         overflow: hidden;
@@ -216,26 +236,25 @@ st.markdown('<p class="sender-tag">🎓 WISHING AN EXCEPTIONAL STUDENT ✨</p>',
 # THE GRAND SHINY HAPPY BIRTHDAY BOLD TITLE
 st.markdown('<h1 class="giant-neon-birthday">HAPPY BIRTHDAY<br>ANSHIKA 🌹</h1>', unsafe_allow_html=True)
 
-# --- DECORATED SIDE-BY-SIDE FRAME ALIGNMENT ENGINE ---
-col1, col2 = st.columns([1.1, 1])
+# --- INLINE PURE FLEX MATRIX (Guarantees Left-Right Side Lock) ---
+target_photo = "rotated_photo_only~2.jpg"
+photo_src = f"app/{target_photo}" if os.path.exists(target_photo) else "https://unsplash.com"
 
-with col1:
-    # B&W Target photo automatically pulled from repository
-    target_photo = "rotated_photo_only~2.jpg"
-    if os.path.exists(target_photo):
-        st.image(target_photo, use_container_width=True)
-    else:
-        st.image("https://unsplash.com", use_container_width=True)
-
-with col2:
-    # Side panel embedded with romantic glowing heart symbols & classy parameters
-    st.markdown("""
-        <div class="side-text-panel">
-            <div><span class="heart-bullet">❤️</span> Pure Brilliance <span class="heart-bullet">❤️</span></div><br>
-            <div><span class="heart-bullet">🌹</span> Outstanding Scholar 🎓</div><br>
-            <div><span class="heart-bullet">✨</span> Absolute Grace 💘</div>
+# Forcefully injecting native responsive flex row
+st.markdown(f"""
+    <div class="flex-side-by-side">
+        <div class="left-photo-container">
+            <img src="https://githubusercontent.com{st.context.get("repo_owner", "prabhat-12345")}/{st.context.get("repo_name", "Anshi")}/main/{target_photo}" onerror="this.src='https://unsplash.com'">
         </div>
-    """, unsafe_allow_html=True)
+        <div class="right-decor-container">
+            <div class="side-text-panel">
+                <div><span class="heart-bullet">❤️</span> Pure Brilliance <span class="heart-bullet">❤️</span></div>
+                <div><span class="heart-bullet">🌹</span> Outstanding Scholar 🎓</div>
+                <div><span class="heart-bullet">✨</span> Absolute Grace 💘</div>
+            </div>
+        </div>
+    </div>
+""", unsafe_allow_html=True)
 
 # THE DYNAMIC FAST DHADAKTA HUA DIL ENGINE
 st.markdown('<div class="heart-engine-box"><span class="ultimate-fast-heart">❤️</span></div>', unsafe_allow_html=True)
