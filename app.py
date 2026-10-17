@@ -1,9 +1,10 @@
 import streamlit as st
+import os
 
 # Custom canvas page configurations for a highly professional setup
 st.set_page_config(page_title="Happy Birthday Anshika! ✨", page_icon="🎓", layout="centered")
 
-# 100% Pure Intense Liquid Red Canvas & Shifting Green Neon Header
+# 100% Pure Intense Liquid Red Canvas, Shifting Green Neon Header, and Image Frames
 st.markdown("""
     <style>
     /* 1. LIQUID NEON SHIFTING BACKGROUND */
@@ -52,7 +53,6 @@ st.markdown("""
         text-transform: uppercase;
         line-height: 1.2;
         letter-spacing: 2px;
-        /* Core Green Matrix Shifting Colors Gradient */
         background: linear-gradient(45deg, #00ff7f, #00eb00, #adff2f, #00ffaa, #ff004c);
         background-size: 300% 300%;
         -webkit-background-clip: text;
@@ -72,7 +72,19 @@ st.markdown("""
         100% { filter: drop-shadow(0 0 35px rgba(0, 235, 0, 0.9)); }
     }
 
-    /* 4. DYNAMIC STATUS RIBBON BADGES - SHIFTING CRIMSON BORDERS */
+    /* 4. PREMIUM NEON FRAME OVERRIDE FOR THE IMAGE CONTAINER */
+    .stImage > img {
+        border-radius: 20px !important;
+        border: 4px solid #ff4d6d !important;
+        box-shadow: 0 15px 45px rgba(255, 0, 76, 0.8) !important;
+        transition: transform 0.4s ease-in-out !important;
+    }
+    
+    .stImage > img:hover {
+        transform: scale(1.03) !important;
+    }
+
+    /* 5. DYNAMIC STATUS RIBBON BADGES */
     .love-ribbon-badge {
         background: rgba(255, 0, 76, 0.2);
         color: #ffffff;
@@ -93,7 +105,7 @@ st.markdown("""
         100% { border-color: #ff7675; box-shadow: 0 0 15px #ff7675; }
     }
 
-    /* 5. FAST REAL DHADAKTA HUA DIL ENGINE */
+    /* 6. FAST REAL DHADAKTA HUA DIL ENGINE */
     .heart-engine-box {
         margin: 25px 0;
     }
@@ -110,7 +122,7 @@ st.markdown("""
         100% { transform: scale(1.25) rotate(3deg); filter: drop-shadow(0 0 50px #ff0000); }
     }
 
-    /* 6. CLASSY ACADEMIC MOTIVATIONAL BOARDS WITH RED DYNAMIC SHADOWS */
+    /* 7. CLASSY ACADEMIC MOTIVATIONAL BOARDS */
     .classy-scroll-card {
         background: rgba(30, 0, 4, 0.96);
         font-size: 1.25rem !important;
@@ -148,7 +160,7 @@ st.markdown("""
         100% { color: #ffffff; text-shadow: 0 0 10px #ffffff; }
     }
 
-    /* 7. HIGH-LEVEL TYPEWRITER ENGINE WITH 100% WIDE TEXT WRAPPING FIX */
+    /* 8. TYPEWRITER ENGINE WITH 100% TEXT WRAPPING FIX */
     .typewriter-box {
         margin: 35px 0;
         background: rgba(0, 0, 0, 0.4);
@@ -182,7 +194,7 @@ st.markdown("""
         50% { border-color: #ff004c; }
     }
 
-    /* 8. ROYAL RED CELEBRATION BUTTON */
+    /* 9. ROYAL RED CELEBRATION BUTTON */
     div.stButton > button:first-child {
         background: linear-gradient(45deg, #ff004c, #ff4d6d) !important;
         color: #ffffff !important;
@@ -211,8 +223,18 @@ st.markdown('<div class="screenshot-layout-shell">', unsafe_allow_html=True)
 # RESPECTFUL MENTOR IDENTIFIER TAG WITH PYARA EMOJI
 st.markdown('<p class="sender-tag">🎓 WISHING AN EXCEPTIONAL STUDENT ✨</p>', unsafe_allow_html=True)
 
-# THE GRAND SHINY HAPPY BIRTHDAY BOLD TITLE (NOW DYNAMIC GREEN SHIFT)
+# THE GRAND SHINY HAPPY BIRTHDAY BOLD TITLE (DYNAMIC GREEN SHIFT)
 st.markdown('<h1 class="giant-neon-birthday">HAPPY BIRTHDAY<br>ANSHIKA 🌹</h1>', unsafe_allow_html=True)
+
+# --- AUTOMATIC IMAGE RESOLVER FOR UPLOADED FILE ---
+# Directly checking the exact name from your GitHub repository
+target_photo = "rotated_photo_only~2.jpg"
+
+if os.path.exists(target_photo):
+    st.image(target_photo, use_container_width=True)
+else:
+    # Internet fallback avatar if file path encounters rendering latency
+    st.image("https://unsplash.com", use_container_width=True)
 
 # THE DYNAMIC FAST DHADAKTA HUA DIL ENGINE
 st.markdown('<div class="heart-engine-box"><span class="ultimate-fast-heart">❤️</span></div>', unsafe_allow_html=True)
