@@ -8,7 +8,7 @@ st.set_page_config(page_title="Happy Birthday Anshika! ✨", page_icon="🎓", l
 st.snow()
 st.balloons()
 
-# Intense Shifting Red Canvas, Rigid layout & Special Growing Heart Animation
+# Intense Shifting Red Canvas, Rigid layout & SVG Heart Tracing Animation
 st.markdown("""
     <style>
     /* 1. LIQUID NEON SHIFTING INTENSE RED BACKGROUND */
@@ -140,28 +140,29 @@ st.markdown("""
         100% { transform: scale(1.22) rotate(-3deg); filter: drop-shadow(0 0 45px #ff0000); }
     }
 
-    /* 7. MAGIC GROWING MINI HEART ENGINE (Starts from 0 and becomes complete) */
-    .magic-mini-heart-box {
-        margin: 25px 0;
+    /* 7. HIGH-LEVEL HTML SVG STROKE DRAWING HEART (Gol ghum ke poora banna) */
+    .svg-heart-container {
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: 30px 0;
     }
 
-    .magic-mini-heart {
-        font-size: 55px;
-        color: #ff004c;
-        display: inline-block;
-        filter: drop-shadow(0 0 15px #ff004c);
-        animation: growToComplete 4s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;
+    .svg-draw-path {
+        stroke: #ff004c;
+        stroke-width: 3;
+        fill: none;
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+        animation: drawHeartGhoomKe 5s linear infinite;
+        filter: drop-shadow(0 0 10px #ff004c);
     }
 
-    @keyframes growToComplete {
-        0% { transform: scale(0); opacity: 0; filter: drop-shadow(0 0 0px #ff004c); }
-        30% { transform: scale(0.5); opacity: 0.5; }
-        60% { transform: scale(1.2); opacity: 1; filter: drop-shadow(0 0 25px #ff4d6d); }
-        80% { transform: scale(1); opacity: 1; }
-        100% { transform: scale(1); opacity: 1; }
+    @keyframes drawHeartGhoomKe {
+        0% { stroke-dashoffset: 1000; fill: rgba(255, 0, 76, 0); }
+        50% { stroke-dashoffset: 0; fill: rgba(255, 0, 76, 0); }
+        75% { stroke-dashoffset: 0; fill: rgba(255, 0, 76, 0.8); filter: drop-shadow(0 0 20px #ff4d6d); }
+        100% { stroke-dashoffset: 0; fill: rgba(255, 0, 76, 0.8); }
     }
 
     /* 8. ELITE ENGLISH MOTIVATIONAL SCROLL CARDS */
@@ -234,7 +235,7 @@ st.markdown("""
 st.markdown('<div class="screenshot-layout-shell">', unsafe_allow_html=True)
 
 # RESPECTFUL TOP TAG
-st.markdown('<p class="sender-tag">🎓 WISHING AN EXCEPTIONAL STUDENT ✨</p>', unsafe_allow_html=True)
+st.markdown('<p class="sender-tag">🎓 WISHING AN EXCEPTIONAL STUDENT SIGNATURE ✨</p>', unsafe_allow_html=True)
 
 # THE GRAND SHINY HAPPY BIRTHDAY BOLD TITLE
 st.markdown('<h1 class="giant-neon-birthday">HAPPY BIRTHDAY<br>ANSHIKA 🌹</h1>', unsafe_allow_html=True)
@@ -270,8 +271,15 @@ st.markdown("""
     </div>
 """, unsafe_allow_html=True)
 
-# --- NEW: INTERMEDIATE MAGIC GROWING MINI HEART ANIMATION (Tied between boards) ---
-st.markdown('<div class="magic-mini-heart-box"><span class="magic-mini-heart">❤️</span></div>', unsafe_allow_html=True)
+# --- NEW: HIGH-LEVEL INLINE SVG STRUCTURAL VECTOR TRACING HEART (Dhire dhire gol ghum ke poora banna) ---
+st.markdown("""
+    <div class="svg-heart-container">
+        <svg width="120" height="120" viewBox="0 0 32 32">
+            <path class="svg-draw-path" d="M16,28.223L4.266,16.507C1.846,14.087,1.846,10.158,4.266,7.738c2.42-2.42,6.349-2.42,8.769,0L16,10.702l2.965-2.964
+            c2.42-2.42,6.349-2.42,8.769,0c2.42,2.42,2.42,6.349,0,8.769L16,28.223z"/>
+        </svg>
+    </div>
+""", unsafe_allow_html=True)
 
 # --- SECOND ELITE ENGLISH MOTIVATIONAL BOARD ---
 st.markdown("""
@@ -279,13 +287,4 @@ st.markdown("""
         <span class="chapter-tag">🚀 THE VISION OF SUCCESS 🏆</span>
         "May this special day bring you great inspiration and open new avenues for your growth and research. Stay relentless in your pursuit of knowledge, and may you reach the absolute pinnacle of success in your future career. Have a wonderful birthday! 🚀🏆"
     </div>
-""", unsafe_allow_html=True)
-
-# --- FIXED TYPEWRITER AUTOMATIC LETTER MACHINE ---
-st.markdown("""
-    <div class="typewriter-box">
-        <div class="typewriter-text">Happy Birthday Anshika! ✨</div>
-    </div>
-""", unsafe_allow_html=True)
-
-st.markdown('</div>', unsafe_allow_html=True)
+    
