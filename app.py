@@ -3,14 +3,14 @@ import streamlit as st
 # Custom canvas page configurations for a respectful, brilliant setup
 st.set_page_config(page_title="Happy Birthday Anshika! ✨", page_icon="🎓", layout="centered")
 
-# 100% Pure Intense Crimson Red Fluid Style Overwrite - No Frames, Elite Responsive Text
+# 100% Pure Intense Shifting Red Canvas & Typewriter Effects
 st.markdown("""
     <style>
-    /* Full view intense premium dark red velvet gradient shifting continuously */
+    /* 1. DYNAMIC FLUID SHIFTING BACKGROUND */
     .stApp {
-        background: radial-gradient(circle at center, #9e000e 0%, #4a0005 50%, #1c0002 100%) !important;
-        background-size: 200% 200% !important;
-        animation: fluidRedAura 8s ease infinite !important;
+        background: linear-gradient(135deg, #7a0006, #4a0002, #b50014, #3d0004) !important;
+        background-size: 400% 400% !important;
+        animation: fluidRedAura 10s ease infinite !important;
         font-family: 'Poppins', 'Helvetica', sans-serif;
         overflow-x: hidden;
     }
@@ -29,25 +29,30 @@ st.markdown("""
         padding: 10px;
     }
 
-    /* 1. MENTOR TOP SENDER TAG IN PURE RED GLOW */
+    /* 2. MENTOR TOP SENDER TAG WITH PULSING SHINE */
     .sender-tag {
-        font-size: 1.1rem;
+        font-size: 1.15rem;
         font-weight: bold;
         color: #ff4d6d;
         letter-spacing: 3px;
         text-transform: uppercase;
         margin-top: 20px;
-        text-shadow: 0 0 10px #ff004c;
+        animation: textPulse 2s infinite alternate;
     }
 
-    /* 2. GLOWING BOLD HAPPY BIRTHDAY HEADER - ONLY RED & WHITE SHINE */
+    @keyframes textPulse {
+        0% { opacity: 0.7; text-shadow: 0 0 5px #ff004c; }
+        100% { opacity: 1; text-shadow: 0 0 15px #ff4d6d; }
+    }
+
+    /* 3. GLOWING BOLD HAPPY BIRTHDAY HEADER WITH DYNAMIC TEXT COLOR SHIFT */
     .giant-neon-birthday {
         font-size: 3.8rem !important;
         font-weight: 900 !important;
         text-transform: uppercase;
         line-height: 1.2;
         letter-spacing: 2px;
-        background: linear-gradient(45deg, #ff004c, #ff4d6d, #ff7675, #ffffff);
+        background: linear-gradient(45deg, #ff004c, #ff4d6d, #ff7675, #ffffff, #ff004c);
         background-size: 300% 300%;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -62,11 +67,11 @@ st.markdown("""
     }
 
     @keyframes extremeGlow {
-        0% { filter: drop-shadow(0 0 15px #ff004c); }
-        100% { filter: drop-shadow(0 0 35px #ff4d6d); }
+        0% { filter: drop-shadow(0 0 10px #ff004c); }
+        100% { filter: drop-shadow(0 0 30px #ff7675); }
     }
 
-    /* 3. DYNAMIC STATUS RIBBON BADGES - PURE CRIMSON AURA */
+    /* 4. DYNAMIC SHIFTING BORDERS FOR STATUS RIBBON */
     .love-ribbon-badge {
         background: rgba(255, 0, 76, 0.15);
         color: #ffffff;
@@ -78,21 +83,36 @@ st.markdown("""
         display: inline-block;
         border: 2px solid;
         margin: 15px auto;
-        box-shadow: 0 0 20px rgba(255, 0, 76, 0.5);
-        animation: borderShift 5s infinite alternate;
+        animation: borderShift 4s infinite alternate;
     }
 
     @keyframes borderShift {
-        0% { border-color: #ff004c; box-shadow: 0 0 20px #ff004c; }
-        50% { border-color: #ff4d6d; box-shadow: 0 0 35px #ff4d6d; }
-        100% { border-color: #ff7675; box-shadow: 0 0 20px #ff7675; }
+        0% { border-color: #ff004c; box-shadow: 0 0 15px #ff004c; color: #ffeaea; }
+        50% { border-color: #ff4d6d; box-shadow: 0 0 25px #ff4d6d; color: #ffffff; }
+        100% { border-color: #ff7675; box-shadow: 0 0 15px #ff7675; color: #ffcccc; }
     }
 
-    /* 4. REFINED CLASSY CHOTA DYNAMIC ENGLISH BOARDS */
+    /* 5. FAST REAL DHADAKTA HUA DIL ENGINE */
+    .heart-engine-box {
+        margin: 20px 0;
+    }
+
+    .ultimate-fast-heart {
+        font-size: 100px;
+        display: inline-block;
+        animation: fastThrob 0.45s infinite alternate;
+        filter: drop-shadow(0 0 35px #ff004c);
+    }
+
+    @keyframes fastThrob {
+        0% { transform: scale(1); filter: drop-shadow(0 0 15px #ff004c); }
+        100% { transform: scale(1.22) rotate(-3deg); filter: drop-shadow(0 0 45px #ff0000); }
+    }
+
+    /* 6. REFINED CLASSY CHOTA DYNAMIC BOARDS (Text colors change dynamically) */
     .classy-scroll-card {
         background: rgba(35, 0, 5, 0.95);
-        color: #ffeaea;
-        font-size: 1.25rem !important; /* Fixed to small, elegant size */
+        font-size: 1.25rem !important;
         font-weight: 500;
         line-height: 1.6;
         padding: 30px 25px;
@@ -106,9 +126,9 @@ st.markdown("""
     }
 
     @keyframes cardColorShift {
-        0% { border-color: #ff004c; color: #ffeaea; }
-        50% { border-color: #ff4d6d; color: #fff5f5; }
-        100% { border-color: #ff7675; color: #ffcccc; }
+        0% { border-color: #ff004c; color: #ffeaea; box-shadow: 0 0 20px rgba(255,0,76,0.3); }
+        50% { border-color: #ff4d6d; color: #fff5f5; box-shadow: 0 0 30px rgba(255,77,109,0.4); }
+        100% { border-color: #ff7675; color: #ffcccc; box-shadow: 0 0 20px rgba(255,118,117,0.3); }
     }
 
     .chapter-tag {
@@ -120,9 +140,47 @@ st.markdown("""
         color: #ff4d6d;
         margin-bottom: 15px;
         text-shadow: 0 0 8px #ff004c;
+        animation: tagColor 4s infinite alternate;
     }
 
-    /* 5. ULTIMATE ROYAL RED MENTORSHIP CELEBRATION BUTTON */
+    @keyframes tagColor {
+        0% { color: #ff004c; }
+        100% { color: #ffffff; }
+    }
+
+    /* 7. CLASSY TYPEWRITER ANIMATION ENGINE (Letters write down one by one) */
+    .typewriter-box {
+        margin: 30px 0;
+        background: rgba(0, 0, 0, 0.3);
+        padding: 20px;
+        border-radius: 15px;
+        border: 1px dashed #ff4d6d;
+    }
+
+    .typewriter-text {
+        font-size: 1.6rem;
+        font-weight: bold;
+        color: #ffffff;
+        overflow: hidden;
+        border-right: .15em solid #ff004c;
+        white-space: nowrap;
+        margin: 0 auto;
+        letter-spacing: .15em;
+        display: inline-block;
+        animation: typing 4s steps(30, end) infinite, blink-caret .75s step-end infinite;
+    }
+
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+    }
+
+    @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: #ff004c; }
+    }
+
+    /* 8. ULTIMATE CELEBRATION BUTTON */
     div.stButton > button:first-child {
         background: linear-gradient(45deg, #ff004c, #ff4d6d) !important;
         color: #ffffff !important;
@@ -148,27 +206,37 @@ st.markdown("""
 # Main App execution shell
 st.markdown('<div class="screenshot-layout-shell">', unsafe_allow_html=True)
 
-# RESPECTFUL MENTOR IDENTIFIER TAG
-st.markdown('<p class="sender-tag">🎓 WISHING AN EXCEPTIONAL STUDENT 🎓</p>', unsafe_allow_html=True)
+# RESPECTFUL MENTOR IDENTIFIER TAG WITH PYARA EMOJI
+st.markdown('<p class="sender-tag">🎓 WISHING AN EXCEPTIONAL STUDENT ✨</p>', unsafe_allow_html=True)
 
 # THE GRAND SHINY HAPPY BIRTHDAY BOLD TITLE
 st.markdown('<h1 class="giant-neon-birthday">HAPPY BIRTHDAY<br>ANSHIKA 🌹</h1>', unsafe_allow_html=True)
 
-# TOP BADGE
-st.markdown('<div class="love-ribbon-badge">❤️ DEDICATION & EXCELLENCE ❤️</div>', unsafe_allow_html=True)
+# THE DYNAMIC FAST DHADAKTA HUA DIL ENGINE
+st.markdown('<div class="heart-engine-box"><span class="ultimate-fast-heart">❤️</span></div>', unsafe_allow_html=True)
 
-# --- TWO REFINED ELITE ENGLISH MOTIVATIONAL BOARDS ---
+# TOP BADGE WITH CLASSY EMOJIS
+st.markdown('<div class="love-ribbon-badge">✨ DEDICATION & EXCELLENCE 🎓</div>', unsafe_allow_html=True)
+
+# --- REFINED ELITE ENGLISH MOTIVATIONAL BOARDS ---
 st.markdown("""
     <div class="classy-scroll-card">
-        <span class="chapter-tag">✧ ACADEMIC APPRECIATION ✧</span>
+        <span class="chapter-tag">✨ ACADEMIC APPRECIATION ✨</span>
         "Anshika, having a student as dedicated, focused, and intellectually driven as you is a true privilege. Your hard work, academic consistency, and sharp analytical mind set a stellar example for everyone. May you keep conquering new academic milestones. Happy Birthday! 🎓🌹"
     </div>
 """, unsafe_allow_html=True)
 
 st.markdown("""
     <div class="classy-scroll-card">
-        <span class="chapter-tag">✧ THE VISION OF SUCCESS ✧</span>
+        <span class="chapter-tag">🚀 THE VISION OF SUCCESS 🏆</span>
         "May this special day bring you great inspiration and open new avenues for your growth and research. Stay relentless in your pursuit of knowledge, and may you reach the absolute pinnacle of success in your future career. Have a wonderful birthday! 🚀🏆"
+    </div>
+""", unsafe_allow_html=True)
+
+# --- THE TYPEWRITER AUTOMATIC LETTER MACHINE ---
+st.markdown("""
+    <div class="typewriter-box">
+        <div class="typewriter-text">✨ Happy Birthday Anshika! 🎓</div>
     </div>
 """, unsafe_allow_html=True)
 
