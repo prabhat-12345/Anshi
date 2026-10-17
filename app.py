@@ -4,26 +4,18 @@ import os
 # Custom canvas page configurations for an elite setup
 st.set_page_config(page_title="Happy Birthday Anshika! ✨", page_icon="🎓", layout="centered")
 
-# Forceful Automatic Animations on page load
+# Automatic background animations on page load
 st.snow()
 st.balloons()
 
-# Intense Shifting Red Canvas, Rigid layout & Fixed SVG Tracing Animation
+# 100% Exact Replica of the Laser Neon Light Heart via HTML5 Canvas JavaScript Engine
 st.markdown("""
     <style>
-    /* 1. LIQUID NEON SHIFTING INTENSE RED BACKGROUND */
+    /* Full view dark neon canvas background override */
     .stApp {
-        background: linear-gradient(135deg, #4d0005 0%, #a80011 25%, #ff1a3b 50%, #80000a 75%, #1f0002 100%) !important;
-        background-size: 400% 400% !important;
-        animation: gorgeousLiquidRed 8s ease infinite !important;
+        background: #050508 !important;
         font-family: 'Poppins', 'Helvetica', sans-serif;
         overflow-x: hidden;
-    }
-
-    @keyframes gorgeousLiquidRed {
-        0% { background-position: 0% 50%; }
-        50% { background-position: 100% 50%; }
-        100% { background-position: 0% 50%; }
     }
 
     /* Core Content Wrapper Shell */
@@ -34,23 +26,18 @@ st.markdown("""
         padding: 5px;
     }
 
-    /* 2. MENTOR TOP SENDER TAG WITH PULSING AURA */
+    /* MENTOR TOP SENDER TAG WITH PULSING AURA */
     .sender-tag {
         font-size: 1.15rem;
         font-weight: bold;
-        color: #ff7675;
+        color: #ff4d6d;
         letter-spacing: 3px;
         text-transform: uppercase;
         margin-top: 20px;
-        animation: textPulse 2s infinite alternate;
+        text-shadow: 0 0 10px #ff004c;
     }
 
-    @keyframes textPulse {
-        0% { opacity: 0.7; text-shadow: 0 0 5px #ff004c; }
-        100% { opacity: 1; text-shadow: 0 0 15px #ff7675; }
-    }
-
-    /* 3. DYNAMIC GLOW HAPPY BIRTHDAY TITLE */
+    /* DYNAMIC GLOW HAPPY BIRTHDAY TITLE WITH INTENSE GREEN MATRIX SHIFT */
     .giant-neon-birthday {
         font-size: 3.5rem !important;
         font-weight: 900 !important;
@@ -76,114 +63,34 @@ st.markdown("""
         100% { filter: drop-shadow(0 0 35px rgba(0, 235, 0, 0.9)); }
     }
 
-    /* 4. GORGEOUS ROMANTIC DECORATED RED NEON PHOTO FRAME */
-    .stImage > img {
-        border-radius: 20px !important;
-        border: 4px solid #ff004c !important;
-        box-shadow: 0 0 20px #ff004c, 0 10px 30px rgba(255,0,76,0.6) !important;
-        animation: romanticFramePulse 3s infinite alternate !important;
-        display: block;
-    }
-
-    @keyframes romanticFramePulse {
-        0% { border-color: #ff004c; filter: drop-shadow(0 0 5px #ff004c); }
-        100% { border-color: #ffffff; filter: drop-shadow(0 0 20px #ff7675); }
-    }
-
-    /* 5. ROMANTIC DECORATIVE INNER CONTAINER IN RIGHT COLUMN */
-    .dynamic-love-board {
-        background: rgba(30, 0, 4, 0.95) !important;
-        color: #ffffff !important;
-        font-size: 1.15rem !important;
-        font-weight: bold !important;
-        padding: 22px 12px !important;
-        border-radius: 15px !important;
-        border: 2px solid #ff004c !important;
-        box-shadow: 0 8px 25px rgba(255, 0, 76, 0.5) !important;
-        text-align: center !important;
-        display: flex !important;
-        flex-direction: column !important;
-        gap: 15px !important;
-        animation: panelGlowWave 4s infinite alternate !important;
-    }
-
-    @keyframes panelGlowWave {
-        0% { border-color: #ff004c; box-shadow: 0 0 10px rgba(255,0,76,0.4); }
-        100% { border-color: #ff7675; box-shadow: 0 0 25px rgba(255,118,117,0.6); }
-    }
-
-    .heart-bullet {
-        color: #ff004c;
-        font-size: 1.3rem;
-        display: inline-block;
-        animation: throbEffect 0.5s infinite alternate;
-    }
-
-    @keyframes throbEffect {
-        to { transform: scale(1.15); }
-    }
-
-    /* 6. CONTINUOUS FAST DHADAKTA HUA DIL ENGINE */
-    .heart-engine-box {
-        margin: 30px 0;
-    }
-
-    .ultimate-fast-heart {
-        font-size: 100px;
-        display: inline-block;
-        animation: fastThrob 0.45s infinite alternate;
-        filter: drop-shadow(0 0 35px #ff004c);
-    }
-
-    @keyframes fastThrob {
-        0% { transform: scale(1); filter: drop-shadow(0 0 15px #ff004c); }
-        100% { transform: scale(1.22) rotate(-3deg); filter: drop-shadow(0 0 45px #ff0000); }
-    }
-
-    /* 7. HIGH-LEVEL HTML SVG STROKE DRAWING HEART TOOL */
-    .svg-heart-container {
+    /* HIGH-LEVEL NEON LASER HEART MATRIX CONTAINER */
+    .laser-heart-frame {
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 30px 0;
+        margin: 25px 0;
+        background: #000;
+        border-radius: 20px;
+        border: 2px solid #ff004c;
+        box-shadow: 0 0 30px rgba(255, 0, 76, 0.5);
+        padding: 10px;
     }
 
-    .svg-draw-path {
-        stroke: #ff004c;
-        stroke-width: 3;
-        fill: none;
-        stroke-dasharray: 1000;
-        stroke-dashoffset: 1000;
-        animation: drawHeartGhoomKe 5s linear infinite;
-        filter: drop-shadow(0 0 10px #ff004c);
-    }
-
-    @keyframes drawHeartGhoomKe {
-        0% { stroke-dashoffset: 1000; fill: rgba(255, 0, 76, 0); }
-        50% { stroke-dashoffset: 0; fill: rgba(255, 0, 76, 0); }
-        75% { stroke-dashoffset: 0; fill: rgba(255, 0, 76, 0.8); filter: drop-shadow(0 0 20px #ff4d6d); }
-        100% { stroke-dashoffset: 0; fill: rgba(255, 0, 76, 0.8); }
-    }
-
-    /* 8. ELITE ENGLISH MOTIVATIONAL SCROLL CARDS */
+    /* ELITE ENGLISH MOTIVATIONAL SCROLL CARDS */
     .classy-scroll-card {
-        background: rgba(30, 0, 4, 0.96);
+        background: rgba(15, 15, 25, 0.95);
         font-size: 1.25rem !important;
         font-weight: 500;
         line-height: 1.6;
         padding: 35px 25px;
         border-radius: 20px;
-        border: 2px solid;
+        border: 2px solid #ff004c;
         margin-top: 30px;
         margin-bottom: 30px;
         text-align: center;
-        box-shadow: 0 12px 35px rgba(0,0,0,0.7);
-        animation: cardColorShift 6s infinite alternate;
-    }
-
-    @keyframes cardColorShift {
-        0% { border-color: #ff004c; color: #ffeaea; }
-        100% { border-color: #ff7675; color: #ffcccc; }
+        box-shadow: 0 0 20px rgba(255, 0, 76, 0.3);
+        color: #ffffff;
     }
 
     .chapter-tag {
@@ -196,10 +103,10 @@ st.markdown("""
         margin-bottom: 15px;
     }
 
-    /* 9. TYPEWRITER BOX ENGINE */
+    /* TYPEWRITER BOX ENGINE */
     .typewriter-box {
         margin: 35px 0;
-        background: rgba(0, 0, 0, 0.4);
+        background: rgba(255, 255, 255, 0.05);
         padding: 25px 15px;
         border-radius: 15px;
         border: 1px dashed #ff4d6d;
@@ -240,7 +147,7 @@ st.markdown('<p class="sender-tag">🎓 WISHING AN EXCEPTIONAL STUDENT ✨</p>',
 # THE GRAND SHINY HAPPY BIRTHDAY BOLD TITLE
 st.markdown('<h1 class="giant-neon-birthday">HAPPY BIRTHDAY<br>ANSHIKA 🌹</h1>', unsafe_allow_html=True)
 
-# --- SIDE-BY-SIDE FIXED LAYOUT GRID ---
+# --- SIDE-BY-SIDE FIXED LAYOUT GRID FOR PHOTO AND BOARD ---
 target_photo = "rotated_photo_only~2.jpg"
 
 col1, col2 = st.columns(2)
@@ -253,17 +160,75 @@ with col1:
 
 with col2:
     st.markdown("""
-        <div class="dynamic-love-board">
-            <div><span class="heart-bullet">❤️</span> Pure Brilliance <span class="heart-bullet">❤️</span></div>
-            <div><span class="heart-bullet">🌹</span> Outstanding Scholar 🎓</div>
-            <div><span class="heart-bullet">✨</span> Absolute Grace 💘</div>
+        <div style="background: rgba(15,15,25,0.95); border: 2px solid #ff004c; border-radius: 15px; padding: 22px 12px; color: white; font-weight: bold; font-size: 1.15rem; text-align: center; display: flex; flex-direction: column; gap: 15px; box-shadow: 0 8px 25px rgba(255,0,76,0.4);">
+            <div>❤️ Pure Brilliance ❤️</div>
+            <div>🌹 Outstanding Scholar 🎓</div>
+            <div>✨ Absolute Grace 💘</div>
         </div>
     """, unsafe_allow_html=True)
 
-# THE DYNAMIC FAST DHADAKTA HUA DIL ENGINE
-st.markdown('<div class="heart-engine-box"><span class="ultimate-fast-heart">❤️</span></div>', unsafe_allow_html=True)
+# --- THE MATRIX NEON LASER HEART LIGHT SHOW ENGINE ---
+st.markdown('<div class="laser-heart-frame">', unsafe_allow_html=True)
+st.components.v1.html("""
+    <canvas id="laserHeartCanvas" width="400" height="400" style="background:#000; max-width:100%;"></canvas>
+    <script>
+    const canvas = document.getElementById('laserHeartCanvas');
+    const ctx = canvas.getContext('2d');
+    let width = canvas.width;
+    let height = canvas.height;
+    let time = 0;
 
-# --- FIRST ELITE ENGLISH MOTIVATIONAL BOARD ---
+    function getHeartPoint(t) {
+        // Core parametric heart equation variables mapping
+        let x = 16 * Math.pow(Math.sin(t), 3);
+        let y = 13 * Math.cos(t) - 5 * Math.cos(2*t) - 2 * Math.cos(3*t) - Math.cos(4*t);
+        return { x: x * 8 + width/2, y: -y * 8 + height/2 - 10 };
+    }
+
+    function draw() {
+        ctx.fillStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.fillRect(0, 0, width, height);
+        
+        time += 0.02;
+        let points = [];
+        
+        // Generating core structural points on the outer boundary
+        for (let t = 0; t < Math.PI * 2; t += 0.05) {
+            points.push(getHeartPoint(t));
+        }
+        
+        // Drawing the brilliant radiant laser beam lines from the epicenter
+        for (let i = 0; i < points.length; i++) {
+            let p = points[i];
+            let hue = (i * 5 + time * 50) % 360;
+            ctx.beginPath();
+            ctx.moveTo(width/2, height/2 - 10);
+            ctx.lineTo(p.x, p.y);
+            ctx.strokeStyle = `hsla(${hue}, 100%, 60%, 0.35)`;
+            ctx.lineWidth = 1.5;
+            ctx.stroke();
+        }
+
+        // Drawing the outer boundary sparkling flower star nodes replica
+        for (let i = 0; i < points.length; i++) {
+            let p = points[i];
+            let hue = (i * 6 - time * 60) % 360;
+            ctx.beginPath();
+            ctx.arc(p.x, p.y, 4 + Math.sin(time + i)*2, 0, Math.PI * 2);
+            ctx.fillStyle = `hsla(${hue}, 100%, 70%, 1)`;
+            ctx.shadowColor = `hsla(${hue}, 100%, 60%, 1)`;
+            ctx.shadowBlur = 15;
+            ctx.fill();
+        }
+        
+        requestAnimationFrame(draw);
+    }
+    draw();
+    </script>
+""", height=420)
+st.markdown('</div>', unsafe_allow_html=True)
+
+# --- ELITE ENGLISH MOTIVATIONAL BOARDS ---
 st.markdown("""
     <div class="classy-scroll-card">
         <span class="chapter-tag">✨ ACADEMIC APPRECIATION ✨</span>
@@ -271,17 +236,6 @@ st.markdown("""
     </div>
 """, unsafe_allow_html=True)
 
-# --- STABLE INLINE SVG STRUCTURAL VECTOR TRACING HEART (Dhire dhire gol ghum ke poora banna) ---
-st.markdown("""
-    <div class="svg-heart-container">
-        <svg width="120" height="120" viewBox="0 0 32 32">
-            <path class="svg-draw-path" d="M16,28.223L4.266,16.507C1.846,14.087,1.846,10.158,4.266,7.738c2.42-2.42,6.349-2.42,8.769,0L16,10.702l2.965-2.964
-            c2.42-2.42,6.349-2.42,8.769,0c2.42,2.42,2.42,6.349,0,8.769L16,28.223z"/>
-        </svg>
-    </div>
-""", unsafe_allow_html=True)
-
-# --- SECOND ELITE ENGLISH MOTIVATIONAL BOARD ---
 st.markdown("""
     <div class="classy-scroll-card">
         <span class="chapter-tag">🚀 THE VISION OF SUCCESS 🏆</span>
@@ -289,3 +243,11 @@ st.markdown("""
     </div>
 """, unsafe_allow_html=True)
 
+# --- FIXED TYPEWRITER AUTOMATIC LETTER MACHINE ---
+st.markdown("""
+    <div class="typewriter-box">
+        <div class="typewriter-text">Happy Birthday Anshika! ✨</div>
+    </div>
+""", unsafe_allow_html=True)
+
+st.markdown('</div>', unsafe_allow_html=True)
