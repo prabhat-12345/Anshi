@@ -1,16 +1,24 @@
 import streamlit as st
 
-# Custom canvas page configurations
-st.set_page_config(page_title="Happy Birthday Anshika! ✨", page_icon="🌹", layout="centered")
+# Custom canvas page configurations for a respectful, brilliant setup
+st.set_page_config(page_title="Happy Birthday Anshika! ✨", page_icon="🎓", layout="centered")
 
-# 100% Pure Intense Crimson Red & Silver Premium Style Overwrite
+# 100% Pure Intense Crimson Red Fluid Style Overwrite - No Frames, Elite Responsive Text
 st.markdown("""
     <style>
-    /* Full view intense premium dark red velvet gradient - Absolutely No Yellow */
+    /* Full view intense premium dark red velvet gradient shifting continuously */
     .stApp {
         background: radial-gradient(circle at center, #9e000e 0%, #4a0005 50%, #1c0002 100%) !important;
-        font-family: 'Poppins', 'Georgia', serif;
+        background-size: 200% 200% !important;
+        animation: fluidRedAura 8s ease infinite !important;
+        font-family: 'Poppins', 'Helvetica', sans-serif;
         overflow-x: hidden;
+    }
+
+    @keyframes fluidRedAura {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
     }
 
     /* Core Content Wrapper Shell */
@@ -21,30 +29,30 @@ st.markdown("""
         padding: 10px;
     }
 
-    /* 1. ELITE TOP SENDER TAG IN PURE RED GLOW */
+    /* 1. MENTOR TOP SENDER TAG IN PURE RED GLOW */
     .sender-tag {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         font-weight: bold;
         color: #ff4d6d;
         letter-spacing: 3px;
         text-transform: uppercase;
-        margin-top: 15px;
+        margin-top: 20px;
         text-shadow: 0 0 10px #ff004c;
     }
 
-    /* 2. SABSE BADA GLOWING BOLD HAPPY BIRTHDAY HEADER - ONLY RED & WHITE SHINE */
+    /* 2. GLOWING BOLD HAPPY BIRTHDAY HEADER - ONLY RED & WHITE SHINE */
     .giant-neon-birthday {
-        font-size: 4.5rem !important;
+        font-size: 3.8rem !important;
         font-weight: 900 !important;
         text-transform: uppercase;
-        line-height: 1.1;
+        line-height: 1.2;
         letter-spacing: 2px;
         background: linear-gradient(45deg, #ff004c, #ff4d6d, #ff7675, #ffffff);
         background-size: 300% 300%;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         animation: lightShine 3s linear infinite, extremeGlow 1.8s ease-in-out infinite alternate;
-        margin-top: 10px;
+        margin-top: 15px;
         margin-bottom: 25px;
     }
 
@@ -62,14 +70,14 @@ st.markdown("""
     .love-ribbon-badge {
         background: rgba(255, 0, 76, 0.15);
         color: #ffffff;
-        font-size: 1.3rem !important;
+        font-size: 1.2rem !important;
         font-weight: bold;
         letter-spacing: 2px;
-        padding: 12px 25px;
+        padding: 10px 22px;
         border-radius: 50px;
         display: inline-block;
         border: 2px solid;
-        margin: 20px auto;
+        margin: 15px auto;
         box-shadow: 0 0 20px rgba(255, 0, 76, 0.5);
         animation: borderShift 5s infinite alternate;
     }
@@ -80,43 +88,20 @@ st.markdown("""
         100% { border-color: #ff7675; box-shadow: 0 0 20px #ff7675; }
     }
 
-    /* 4. THE MASTERPIECE PHOTO FRAME BOX WITH SOLID CRIMSON REFLECTION */
-    .photo-frame-outer {
-        position: relative;
-        max-width: 320px;
-        margin: 25px auto;
-        border-radius: 25px;
-        padding: 6px;
-        background: linear-gradient(45deg, #ff004c, #ff4d6d, #ff7675);
-        box-shadow: 0 15px 45px rgba(255, 0, 76, 0.8);
-    }
-
-    .photo-frame-inner {
-        background: #120002;
-        border-radius: 20px;
-        overflow: hidden;
-        display: block;
-    }
-
-    .photo-frame-inner img {
-        width: 100%;
-        display: block;
-    }
-
-    /* 5. CLASSY & HIGH-LEVEL DYNAMIC RED BOARDS */
+    /* 4. REFINED CLASSY CHOTA DYNAMIC ENGLISH BOARDS */
     .classy-scroll-card {
-        background: rgba(45, 0, 6, 0.95);
-        color: #ffffff;
-        font-size: 1.75rem !important;
-        font-weight: bold;
-        line-height: 1.7;
-        padding: 40px 30px;
-        border-radius: 25px;
-        border: 3px solid;
-        margin-top: 35px;
-        margin-bottom: 35px;
+        background: rgba(35, 0, 5, 0.95);
+        color: #ffeaea;
+        font-size: 1.25rem !important; /* Fixed to small, elegant size */
+        font-weight: 500;
+        line-height: 1.6;
+        padding: 30px 25px;
+        border-radius: 20px;
+        border: 2px solid;
+        margin-top: 30px;
+        margin-bottom: 30px;
         text-align: center;
-        box-shadow: 0 15px 40px rgba(0,0,0,0.8);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.6);
         animation: cardColorShift 6s infinite alternate;
     }
 
@@ -128,34 +113,34 @@ st.markdown("""
 
     .chapter-tag {
         display: block;
-        font-size: 1.1rem;
-        font-weight: 900;
+        font-size: 0.95rem;
+        font-weight: 800;
         text-transform: uppercase;
         letter-spacing: 3px;
         color: #ff4d6d;
-        margin-bottom: 25px;
+        margin-bottom: 15px;
         text-shadow: 0 0 8px #ff004c;
     }
 
-    /* 6. ULTIMATE ROYAL RED CELEBRATION BUTTON */
+    /* 5. ULTIMATE ROYAL RED MENTORSHIP CELEBRATION BUTTON */
     div.stButton > button:first-child {
         background: linear-gradient(45deg, #ff004c, #ff4d6d) !important;
         color: #ffffff !important;
-        font-size: 1.35rem !important;
-        font-weight: 900 !important;
+        font-size: 1.25rem !important;
+        font-weight: bold !important;
         border-radius: 50px !important;
-        padding: 15px 40px !important;
+        padding: 12px 35px !important;
         border: 2px solid #ffffff !important;
-        box-shadow: 0 12px 40px rgba(255, 0, 76, 0.8) !important;
+        box-shadow: 0 12px 40px rgba(255, 0, 76, 0.7) !important;
         width: 100%;
-        margin-top: 25px;
+        margin-top: 20px;
         margin-bottom: 60px;
         transition: all 0.3s ease-in-out;
     }
     
     div.stButton > button:first-child:hover {
-        transform: translateY(-5px) scale(1.02);
-        box-shadow: 0 20px 60px #ff0000 !important;
+        transform: translateY(-4px);
+        box-shadow: 0 15px 50px #ff0000 !important;
     }
     </style>
 """, unsafe_allow_html=True)
@@ -163,50 +148,35 @@ st.markdown("""
 # Main App execution shell
 st.markdown('<div class="screenshot-layout-shell">', unsafe_allow_html=True)
 
-# SENDER DECENT TAG
-st.markdown('<p class="sender-tag">❤️ TO A BRILLIANT STUDENT & DEAR FRIEND ❤️</p>', unsafe_allow_html=True)
+# RESPECTFUL MENTOR IDENTIFIER TAG
+st.markdown('<p class="sender-tag">🎓 WISHING AN EXCEPTIONAL STUDENT 🎓</p>', unsafe_allow_html=True)
 
-# THE MEGA BOLD HAPPY BIRTHDAY HEADER
+# THE GRAND SHINY HAPPY BIRTHDAY BOLD TITLE
 st.markdown('<h1 class="giant-neon-birthday">HAPPY BIRTHDAY<br>ANSHIKA 🌹</h1>', unsafe_allow_html=True)
 
-# TOP BADGE 1
-st.markdown('<div class="love-ribbon-badge">❤️ EXCELLENCE & INSPIRATION ❤️</div>', unsafe_allow_html=True)
+# TOP BADGE
+st.markdown('<div class="love-ribbon-badge">❤️ DEDICATION & EXCELLENCE ❤️</div>', unsafe_allow_html=True)
 
-# --- THE PREMIUM NEON PHOTO FRAME SECTION ---
-# Yahan Anshika ki online uploaded photo ka direct link paste karein
-image_url = "https://unsplash.com"
-
-st.markdown(f"""
-    <div class="photo-frame-outer">
-        <div class="photo-frame-inner">
-            <img src="{image_url}" alt="Anshika's Special Birthday Frame">
-        </div>
-    </div>
-""", unsafe_allow_html=True)
-
-# MID BADGE 2
-st.markdown('<div class="love-ribbon-badge">🌹 SHINE BRIGHT ALWAYS 🌹</div>', unsafe_allow_html=True)
-
-# --- TWO LARGE CLASSY & ELITE ENGLISH BOARDS ---
+# --- TWO REFINED ELITE ENGLISH MOTIVATIONAL BOARDS ---
 st.markdown("""
     <div class="classy-scroll-card">
-        <span class="chapter-tag">✧ AN INSPIRING MENTORSHIP ✧</span>
-        "Anshika, having a student and a friend as dedicated and brilliant as you is truly exceptional. Your intellect, hard work, and positive energy light up every room you walk into. May your beautiful mind achieve wonders. Happy Birthday! 🎓🌹✨"
+        <span class="chapter-tag">✧ ACADEMIC APPRECIATION ✧</span>
+        "Anshika, having a student as dedicated, focused, and intellectually driven as you is a true privilege. Your hard work, academic consistency, and sharp analytical mind set a stellar example for everyone. May you keep conquering new academic milestones. Happy Birthday! 🎓🌹"
     </div>
 """, unsafe_allow_html=True)
 
 st.markdown("""
     <div class="classy-scroll-card">
         <span class="chapter-tag">✧ THE VISION OF SUCCESS ✧</span>
-        "May this year unlock unparalleled growth, endless opportunities, and the highest peaks of academic excellence for you. Stay focused, stay unstoppable, and keep shining like the star you are. Have a phenomenal birthday! 🚀🏆🔥"
+        "May this special day bring you great inspiration and open new avenues for your growth and research. Stay relentless in your pursuit of knowledge, and may you reach the absolute pinnacle of success in your future career. Have a wonderful birthday! 🚀🏆"
     </div>
 """, unsafe_allow_html=True)
 
-# GRAND CELEBRATION BLAST TRIGGER
-if st.button("🌹 CLICK FOR ANSHIKA'S GRAND BIRTHDAY SURPRISE! 🌹"):
+# GRAND MENTOR CELEBRATION TRIGGER
+if st.button("🌹 CLICK FOR ANSHIKA'S SUCCESS CELEBRATION! 🌹"):
     st.balloons()
     st.snow()
-    st.toast("Anshika is pure excellence! 🌹✨", icon="❤️")
-    st.success("🎉 Happy Birthday, Anshika! Wishing you infinite success, dynamic joy, and grand milestones ahead! 👑🚀🌟")
+    st.toast("Wishing Anshika excellence! 🎓✨", icon="❤️")
+    st.success("🎉 Happy Birthday, Anshika! Wishing you outstanding career breakthroughs, wisdom, and phenomenal milestones ahead! 🎓🚀🌟")
 
 st.markdown('</div>', unsafe_allow_html=True)
