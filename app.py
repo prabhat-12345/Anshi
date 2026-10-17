@@ -76,32 +76,28 @@ st.markdown("""
         100% { filter: drop-shadow(0 0 35px rgba(0, 235, 0, 0.9)); }
     }
 
-    /* 4. HARD-LOCKED HTML TABLE ALIGNMENT PACK (Prevents center stacking) */
-    .rigid-layout-table {
+    /* 4. HARD-LOCKED FIXED LAYOUT */
+    .layout-box {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: space-between !important;
         width: 100% !important;
-        border-collapse: collapse !important;
+        gap: 15px !important;
         margin: 20px 0 !important;
-        border: none !important;
     }
 
-    .photo-td-cell {
+    .photo-side {
         width: 50% !important;
-        padding-right: 8px !important;
-        vertical-align: middle !important;
-        text-align: left !important;
     }
 
-    .decor-td-cell {
+    .text-side {
         width: 50% !important;
-        padding-left: 8px !important;
-        vertical-align: middle !important;
-        text-align: right !important;
     }
 
-    /* 5. ROMANTIC DECORATED RED NEON PHOTO FRAME */
-    .photo-td-cell img {
+    /* 5. GORGEOUS ROMANTIC DECORATED RED NEON PHOTO FRAME */
+    .photo-side img {
         width: 100% !important;
-        max-width: 280px !important;
         border-radius: 20px !important;
         border: 4px solid #ff004c !important;
         box-shadow: 0 0 20px #ff004c, 0 10px 30px rgba(255,0,76,0.6) !important;
@@ -239,25 +235,31 @@ st.markdown('<p class="sender-tag">🎓 WISHING AN EXCEPTIONAL STUDENT ✨</p>',
 # THE GRAND SHINY HAPPY BIRTHDAY BOLD TITLE
 st.markdown('<h1 class="giant-neon-birthday">HAPPY BIRTHDAY<br>ANSHIKA 🌹</h1>', unsafe_allow_html=True)
 
-# --- STRICT MULTI-COLUMN TABLE ENGINE (No center reset allowed) ---
+# --- STRICT MULTI-COLUMN SIDE-BY-SIDE FRAMEWORK ---
 target_photo = "rotated_photo_only~2.jpg"
 
-st.markdown(f"""
-    <table class="rigid-layout-table">
-        <tr>
-            <td class="photo-td-cell">
-                <img src="https://githubusercontent.com{target_photo}" onerror="this.src='https://unsplash.com'">
-            </td>
-            <td class="decor-td-cell">
-                <div class="dynamic-love-board">
-                    <div><span class="heart-bullet">❤️</span> Pure Brilliance <span class="heart-bullet">❤️</span></div>
-                    <div><span class="heart-bullet">🌹</span> Outstanding Scholar 🎓</div>
-                    <div><span class="heart-bullet">✨</span> Absolute Grace 💘</div>
-                </div>
-            </td>
-        </tr>
-    </table>
-""", unsafe_allow_html=True)
+st.markdown('<div class="stable-inline-flex">', unsafe_allow_html=True)
+
+# Creating clean layout containers using Streamlit columns to display image and card side-by-side perfectly
+col1, col2 = st.columns(2)
+
+with col1:
+    if os.path.exists(target_photo):
+        # Native local path handler to directly render the file without link breaking issues
+        st.image(target_photo, use_container_width=True)
+    else:
+        st.image("https://unsplash.com", use_container_width=True)
+
+with col2:
+    st.markdown("""
+        <div class="dynamic-love-board">
+            <div><span class="heart-bullet">❤️</span> Pure Brilliance <span class="heart-bullet">❤️</span></div>
+            <div><span class="heart-bullet">🌹</span> Outstanding Scholar 🎓</div>
+            <div><span class="heart-bullet">✨</span> Absolute Grace 💘</div>
+        </div>
+    """, unsafe_allow_html=True)
+
+st.markdown('</div>', unsafe_allow_html=True)
 
 # THE DYNAMIC FAST DHADAKTA HUA DIL ENGINE
 st.markdown('<div class="heart-engine-box"><span class="ultimate-fast-heart">❤️</span></div>', unsafe_allow_html=True)
