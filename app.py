@@ -3,7 +3,7 @@ import streamlit as st
 # Custom canvas page configurations
 st.set_page_config(page_title="Happy Birthday Anshika! ✨", page_icon="🎓", layout="centered")
 
-# 100% Pure Crimson Red & Metallic Gold Classy Style Overwrite
+# 100% Pure Royal Crimson Red & Gold Classy Style Overwrite
 st.markdown("""
     <style>
     /* Full view intense premium dark red velvet gradient */
@@ -21,7 +21,7 @@ st.markdown("""
         padding: 10px;
     }
 
-    /* 1. RESPECTFUL TOP SENDER TAG */
+    /* 1. ELITE TOP SENDER TAG */
     .sender-tag {
         font-size: 1.3rem;
         font-weight: bold;
@@ -58,7 +58,7 @@ st.markdown("""
         100% { filter: drop-shadow(0 0 35px #ffd700); }
     }
 
-    /* 3. DYNAMIC STATUS RIBBON BADGES (Changes color dynamically) */
+    /* 3. DYNAMIC STATUS RIBBON BADGES */
     .love-ribbon-badge {
         background: rgba(255, 215, 0, 0.1);
         color: #ffffff;
@@ -103,11 +103,11 @@ st.markdown("""
         display: block;
     }
 
-    /* 5. CLASSY & RESPECTFUL DYNAMIC TEXT BOARDS */
+    /* 5. CLASSY & HIGH-LEVEL DYNAMIC ENGLISH TEXT BOARDS */
     .classy-scroll-card {
         background: rgba(40, 2, 6, 0.95);
         color: #ffffff;
-        font-size: 1.75rem !important; /* Large Bold Font size */
+        font-size: 1.75rem !important;
         font-weight: bold;
         line-height: 1.7;
         padding: 40px 30px;
@@ -165,16 +165,16 @@ st.markdown("""
 st.markdown('<div class="screenshot-layout-shell">', unsafe_allow_html=True)
 
 # SENDER DECENT TAG
-st.markdown('<p class="sender-tag">⭐ TO MY BEST FRIEND & BRILLIANT STUDENT ⭐</p>', unsafe_allow_html=True)
+st.markdown('<p class="sender-tag">⭐ TO A BRILLIANT STUDENT & DEAR FRIEND ⭐</p>', unsafe_allow_html=True)
 
 # THE MEGA BOLD HAPPY BIRTHDAY HEADER
 st.markdown('<h1 class="giant-neon-birthday">HAPPY BIRTHDAY<br>ANSHIKA ✨</h1>', unsafe_allow_html=True)
 
 # TOP BADGE 1
-st.markdown('<div class="love-ribbon-badge">🌟 PROUD OF YOU ALWAYS 🌟</div>', unsafe_allow_html=True)
+st.markdown('<div class="love-ribbon-badge">🌟 INDEPENDENT & BRIGHT 🌟</div>', unsafe_allow_html=True)
 
 # --- THE PREMIUM NEON PHOTO FRAME SECTION ---
-# Puraani temporary image use ki hai, aap is link ko Anshika ki pic se badal sakte hain
+# Yahan Anshika ki online uploaded photo ka direct link paste karein
 image_url = "https://unsplash.com"
 
 st.markdown(f"""
@@ -186,20 +186,20 @@ st.markdown(f"""
 """, unsafe_allow_html=True)
 
 # MID BADGE 2
-st.markdown('<div class="love-ribbon-badge">🎓 SHINE BRIGHT LIKE A STAR 🎓</div>', unsafe_allow_html=True)
+st.markdown('<div class="love-ribbon-badge">🎓 SUCCESS & EXCELLENCE 🎓</div>', unsafe_allow_html=True)
 
-# --- TWO LARGE CLASSY & RESPECTFUL DYNAMIC BOARDS ---
+# --- TWO LARGE CLASSY & ELITE ENGLISH BOARDS ---
 st.markdown("""
     <div class="classy-scroll-card">
-        <span class="chapter-tag">✧ A SPEECH FOR MY BEST FRIEND ✧</span>
-        "Anshika, aap jaisi dedicated student aur sachhi dost milna sach me bohot baadi baat hai. Aapki mehnat aur wo genuine smile pure mahool ko positive bana deti hai. God bless your brilliant mind and beautiful heart. Happy Birthday! 🎓🌟✨"
+        <span class="chapter-tag">✧ AN INSPIRING MENTORSHIP ✧</span>
+        "Anshika, having a student and a friend as dedicated and brilliant as you is truly exceptional. Your intellect, hard work, and positive energy light up every room you walk into. May your beautiful mind achieve wonders. Happy Birthday! 🎓🌟✨"
     </div>
 """, unsafe_allow_html=True)
 
 st.markdown("""
     <div class="classy-scroll-card">
-        <span class="chapter-tag">✧ THE ULTIMATE SUCCESS WISH ✧</span>
-        "Dua hai ki is saal aapko apni padhai aur career me wo sabhi unchaiyan milein jiske aap kabil hain. Hamesha isi tarah focus rehna aur life me aage badhte rehna. A very proud and wonderful Happy Birthday to you, Anshika! 🚀🏆🔥"
+        <span class="chapter-tag">✧ THE VISION OF SUCCESS ✧</span>
+        "May this year unlock unparalleled growth, endless opportunities, and the highest peaks of academic excellence for you. Stay focused, stay unstoppable, and keep shining like the star you are. Have a phenomenal birthday! 🚀🏆🔥"
     </div>
 """, unsafe_allow_html=True)
 
@@ -207,7 +207,7 @@ st.markdown("""
 if st.button("🎉 CLICK FOR ANSHIKA'S GRAND BIRTHDAY SURPRISE! 🎉"):
     st.balloons()
     st.snow()
-    st.toast("Anshika is absolute gold! 🎓✨", icon="⭐")
-    st.success("🎉 Happy Birthday, Anshika! May your year ahead be filled with brilliant success, true happiness, and gold achievements! 🎓🚀🌟")
+    st.toast("Anshika is pure excellence! 🎓✨", icon="⭐")
+    st.success("🎉 Happy Birthday, Anshika! Wishing you infinite professional success, joy, and grand milestones! 🎓🚀🌟")
 
 st.markdown('</div>', unsafe_allow_html=True)
