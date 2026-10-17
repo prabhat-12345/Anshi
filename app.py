@@ -1,146 +1,172 @@
 import streamlit as st
 
-# Page setup and styling for a premium romantic theme
-st.set_page_config(page_title="Happy Birthday Anshika! ❤️", page_icon="🎂", layout="centered")
+# High-level page setup
+st.set_page_config(page_title="For Someone Very Special: Anshika", page_icon="💖", layout="centered")
 
-# Custom CSS for gorgeous fonts, animated pulsing heart, and glowing shadows
+# Advanced Premium UI/UX CSS styling
 st.markdown("""
     <style>
-    /* Premium background gradient */
+    /* Full page premium color palette */
     .stApp {
-        background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
-        font-family: 'Georgia', serif;
+        background: linear-gradient(135deg, #ff4e50 0%, #f9d423 50%, #e84393 100%);
+        background-size: 400% 400%;
+        animation: gradientBG 15s ease infinite;
+        font-family: 'Poppins', 'Georgia', serif;
     }
     
-    /* Main container styling */
-    .main-container {
-        text-align: center;
-        padding: 30px;
-        background: rgba(255, 255, 255, 0.45);
-        border-radius: 20px;
-        box-shadow: 0 10px 30px rgba(255, 75, 75, 0.2);
-        backdrop-filter: blur(10px);
-        margin-top: 20px;
-    }
-    
-    /* Title text styling */
-    .gorgeous-title {
-        font-size: 3.5rem !important;
-        font-weight: bold;
-        color: #d63031;
-        text-shadow: 2px 2px 8px rgba(214, 48, 49, 0.3);
-        margin-bottom: 5px;
-        animation: fadeIn 2s ease-in-out;
-    }
-    
-    .subtitle {
-        font-size: 1.5rem;
-        color: #e84393;
-        font-style: italic;
-        margin-bottom: 25px;
+    @keyframes gradientBG {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
     }
 
-    /* THE BIG BEATING HEART EFFECT */
-    .heart-box {
+    /* Diary/Album Card Style */
+    .diary-card {
+        background: rgba(255, 255, 255, 0.92);
+        padding: 40px;
+        border-radius: 30px;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3), inset 0 0 20px rgba(232, 67, 147, 0.2);
+        border: 4px solid #fff;
+        text-align: center;
+        max-width: 650px;
+        margin: auto;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    /* Glowing Animated Title */
+    .gorgeous-header {
+        font-size: 3.8rem !important;
+        font-weight: 900;
+        background: -webkit-linear-gradient(#d63031, #e84393);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+        margin-bottom: 5px;
+    }
+    
+    .romantic-sub {
+        font-size: 1.6rem;
+        color: #636e72;
+        font-style: italic;
+        margin-bottom: 30px;
+    }
+
+    /* MEGA DIAL-DHADAKTA HEART ANIMATION */
+    .heart-container {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 160px;
-        margin: 20px 0;
+        margin: 25px 0;
     }
 
-    .beating-heart {
-        font-size: 100px;
+    .giant-pulsing-heart {
+        font-size: 130px;
         color: #d63031;
         display: inline-block;
-        animation: beat .8s infinite alternate;
-        transform-origin: center;
-        filter: drop-shadow(0 0 15px rgba(214, 48, 49, 0.6));
+        animation: heartPulse 0.6s infinite alternate;
+        filter: drop-shadow(0 0 25px #ff4e50);
         cursor: pointer;
     }
 
-    @keyframes beat {
-        to { transform: scale(1.3); }
+    @keyframes heartPulse {
+        0% { transform: scale(1); }
+        100% { transform: scale(1.25) rotate(5deg); }
     }
-    
-    /* Quote styling */
-    .romantic-quote {
-        font-size: 1.3rem;
-        color: #4a4a4a;
-        line-height: 1.6;
-        background: rgba(255, 255, 255, 0.7);
-        padding: 20px;
-        border-left: 5px solid #d63031;
-        border-radius: 10px;
-        margin: 20px auto;
-        max-width: 600px;
+
+    /* Diary Page Text Container */
+    .diary-page-text {
+        font-size: 1.4rem;
+        color: #2d3436;
+        line-height: 1.8;
+        background: #fff8f8;
+        padding: 25px;
+        border-radius: 20px;
+        border: 2px dashed #ff7675;
+        margin: 25px 0;
         box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        min-height: 120px;
+    }
+
+    /* Premium Custom Audio Player Box */
+    .audio-box {
+        background: linear-gradient(90deg, #e84393, #ff7675);
+        padding: 15px;
+        border-radius: 50px;
+        margin: 20px auto;
+        max-width: 90%;
+        box-shadow: 0 8px 20px rgba(232, 67, 147, 0.4);
     }
     
-    /* Button redesign */
+    /* Custom Streamlit Buttons override */
     div.stButton > button:first-child {
-        background-color: #d63031 !important;
+        background: linear-gradient(45deg, #d63031, #e84393) !important;
         color: white !important;
         font-size: 1.2rem !important;
+        font-weight: bold !important;
         border-radius: 50px !important;
-        padding: 10px 30px !important;
+        padding: 12px 35px !important;
         border: none !important;
-        box-shadow: 0 4px 15px rgba(214, 48, 49, 0.4) !important;
-        transition: all 0.3s ease !important;
+        box-shadow: 0 6px 20px rgba(214, 48, 49, 0.4) !important;
+        transition: all 0.3s ease-in-out !important;
+        width: 100%;
     }
     
     div.stButton > button:first-child:hover {
-        transform: scale(1.05) !important;
-        background-color: #e84393 !important;
-        box-shadow: 0 6px 20px rgba(232, 67, 147, 0.6) !important;
+        transform: translateY(-3px) scale(1.03) !important;
+        box-shadow: 0 10px 25px rgba(232, 67, 147, 0.6) !important;
     }
     </style>
 """, unsafe_allow_html=True)
 
-# Main structure
-st.markdown('<div class="main-container">', unsafe_allow_html=True)
-st.markdown('<h1 class="gorgeous-title">Happy Birthday, Anshika! ✨</h1>', unsafe_allow_html=True)
-st.markdown('<p class="subtitle">To the most special girl in my world...</p>', unsafe_allow_html=True)
+# App Container initialized as a Diary Album layout
+st.markdown('<div class="diary-card">', unsafe_allow_html=True)
 
-# Big Beating Heart Section
-st.markdown('<div class="heart-box"><span class="beating-heart">❤️</span></div>', unsafe_allow_html=True)
+st.markdown('<h1 class="gorgeous-header">Anshika ✨</h1>', unsafe_allow_html=True)
+st.markdown('<p class="romantic-sub">My Diary of Special Memories & Wishes</p>', unsafe_allow_html=True)
 
-# Audio Player (Optional: YouTube or background link placeholder)
+# 1. MEGA DHADAKTA HUA DIL
+st.markdown('<div class="heart-container"><span class="giant-pulsing-heart">❤️</span></div>', unsafe_allow_html=True)
+
+# 2. HIGH-QUALITY ROMANTIC INSTRUMENTAL AUDIO LAYER
+st.markdown('<div class="audio-box">', unsafe_allow_html=True)
+# Pixabay high-quality direct streaming romantic instrumental audio track 
 st.audio("https://soundhelix.com", start_time=0)
-st.caption("🎵 Click play to add a romantic rhythm to this moment!")
-
 st.markdown('</div>', unsafe_allow_html=True)
+st.caption("✨ Pyaari music shuru karne ke liye upar play button par click karein! ✨")
 
-# Romantic & Beautiful Quotes Section (Interactive Carousel via buttons)
-st.markdown("### 💌 Dil Ki Baatein (Special Wishes for You)")
-
-quotes = [
-    "“Anshika, tum sirf meri best friend nahi, meri duniya ka sabse khoobsurat hissa ho. Tumhaari smile se mera har din roshan hota hai. Happy Birthday, My Special One! 🌹”",
-    "“Duniya ki sabse gorgeous girl ko janamdin ki dher saari mubarakbaad. Khuda kare tumhaari zindagi me har wo khushi ho jo tum chaaho, aur mera sath hamesha tumhaare sath rahe! 💝”",
-    "“Kuch log zindagi me aakar use hamesha ke liye badal dete hain. Meri life me wo insaan tum ho. Meri best friend, meri guide aur sabse pyaari blessing. Happy Birthday, Anshika! 🥰”",
-    "“Tumhaare sath bitaya har lamha premium hai. Aaj tumhaara din hai, ise khul kar jiyo aur hamesha aise hi muskurati raho. You deserve the best birthday in the universe! 🎂🥂”"
+# 3. DIARY PAGES / STORYBOOK CAROUSEL STATE MANAGEMENT
+diary_pages = [
+    "📖 **Page 1: The Magic of You...** \n\n Anshika, tumhaari smile me wo jadoo hai jo meri puri duniya ko ek hi pal me roshan kar deta hai. Tum sirf meri best friend nahi ho, tum meri life ki sabse pyaari aadat ho! Happy Birthday to the most gorgeous girl! 🌹",
+    "💌 **Page 2: Dil Se Dua...** \n\n Bhagwan se bas yahi dua hai ki tumhaari life ka har ek pal is canvas ki tarah colourful aur sparkling ho. Tumhe duniya ki har wo khushi mile jiski tum khwaahish rakhti ho. Mera sath hamesha tumhaare sath rahega! 💝",
+    "💫 **Page 3: My Best Blessing...** \n\n Kuch log life me itne special hote hain ki unke bina zindagi adhuri lagti hai. Mere liye wo tum ho. Tumhaari baatein, tumhaara support aur tumhaari dosti mere liye premium aur priceless hain. 🥰",
+    "🎂 **Page 4: The Ultimate Celebration!** \n\n Aaj tumhaara janamdin hai, isliye udasi ki koi jagah nahi honi chahiye. Tumhe duniya ka sabse best aur happy status milna chahiye kyunki tum sach me pure gold ho. Happy Birthday, Anshika! 🥂"
 ]
 
-# Track quote state without page refresh issues
-if 'quote_index' not in st.session_state:
-    st.session_state.quote_index = 0
+if 'current_page' not in st.session_state:
+    st.session_state.current_page = 0
 
-st.markdown(f'<div class="romantic-quote">{quotes[st.session_state.quote_index]}</div>', unsafe_allow_html=True)
+# Display the colorful text block like a real diary sheet
+st.markdown(f'<div class="diary-page-text">{diary_pages[st.session_state.current_page]}</div>', unsafe_allow_html=True)
 
-col1, col2 = st.columns([1, 1])
-with col1:
-    if st.button("⬅️ Previous Wish"):
-        st.session_state.quote_index = (st.session_state.quote_index - 1) % len(quotes)
+# Navigation elements formatted in beautiful alignment columns
+c1, c2 = st.columns(2)
+with c1:
+    if st.button("⬅️ Turn Page Back"):
+        st.session_state.current_page = (st.session_state.current_page - 1) % len(diary_pages)
         st.rerun()
 
-with col2:
-    if st.button("Next Surprise Wish ➡️"):
-        st.session_state.quote_index = (st.session_state.quote_index + 1) % len(quotes)
+with c2:
+    if st.button("Turn Page Next ➡️"):
+        st.session_state.current_page = (st.session_state.current_page + 1) % len(diary_pages)
         st.rerun()
 
-# Surprise Confetti Trigger
-if st.button("🎉 Click for Magical Birthday Surprise! 🎉"):
+st.markdown('<hr style="border-top: 2px solid #ff7675; opacity: 0.3;">', unsafe_allow_html=True)
+
+# 4. PREMIUM MAGICAL SURPRISE CONFETTI BUTTON
+if st.button("🎁 Open Anshika's Birthday Surprise Box! 🎁"):
     st.balloons()
     st.snow()
-    st.success("You are the most beautiful person, Anshika! Have an amazing year ahead! ✨❤️")
-  
+    st.success("🎉 You are the most beautiful star of my life! Happy Birthday Once Again! ✨👑❤️")
+
+st.markdown('</div>', unsafe_allow_html=True)
