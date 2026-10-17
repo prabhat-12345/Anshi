@@ -1,10 +1,13 @@
 import streamlit as st
 import os
 
-# Custom canvas page configurations for a highly professional setup
+# Custom canvas page configurations for an elite setup
 st.set_page_config(page_title="Happy Birthday Anshika! ✨", page_icon="🎓", layout="centered")
 
-# 100% Pure Intense Liquid Red Canvas, Shifting Green Neon Header, and Image Frames
+# Automatic continuous background snow and loading components trigger instantly
+st.snow()
+
+# 100% Pure Intense Liquid Red Canvas, Side Layout Elements
 st.markdown("""
     <style>
     /* 1. LIQUID NEON SHIFTING BACKGROUND */
@@ -72,40 +75,30 @@ st.markdown("""
         100% { filter: drop-shadow(0 0 35px rgba(0, 235, 0, 0.9)); }
     }
 
-    /* 4. PREMIUM NEON FRAME OVERRIDE FOR THE IMAGE CONTAINER */
-    .stImage > img {
-        border-radius: 20px !important;
-        border: 4px solid #ff4d6d !important;
-        box-shadow: 0 15px 45px rgba(255, 0, 76, 0.8) !important;
-        transition: transform 0.4s ease-in-out !important;
-    }
-    
-    .stImage > img:hover {
-        transform: scale(1.03) !important;
-    }
-
-    /* 5. DYNAMIC STATUS RIBBON BADGES */
-    .love-ribbon-badge {
+    /* 4. SIDE CARD PANEL STYLING */
+    .side-text-panel {
         background: rgba(255, 0, 76, 0.2);
         color: #ffffff;
-        font-size: 1.2rem !important;
+        font-size: 1.4rem;
         font-weight: bold;
-        letter-spacing: 2px;
-        padding: 10px 24px;
-        border-radius: 50px;
-        display: inline-block;
-        border: 2px solid;
-        margin: 15px auto;
-        animation: borderShift 4s infinite alternate;
+        padding: 30px 20px;
+        border-radius: 20px;
+        border: 2px dashed #ff4d6d;
+        box-shadow: 0 10px 25px rgba(255,0,76,0.4);
+        text-align: center;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        animation: panelShift 4s infinite alternate;
     }
 
-    @keyframes borderShift {
+    @keyframes panelShift {
         0% { border-color: #ff004c; box-shadow: 0 0 15px #ff004c; }
-        50% { border-color: #ff4d6d; box-shadow: 0 0 30px #ff4d6d; }
-        100% { border-color: #ff7675; box-shadow: 0 0 15px #ff7675; }
+        100% { border-color: #ff7675; box-shadow: 0 0 25px #ff7675; }
     }
 
-    /* 6. FAST REAL DHADAKTA HUA DIL ENGINE */
+    /* 5. FAST REAL DHADAKTA HUA DIL ENGINE */
     .heart-engine-box {
         margin: 25px 0;
     }
@@ -122,7 +115,7 @@ st.markdown("""
         100% { transform: scale(1.25) rotate(3deg); filter: drop-shadow(0 0 50px #ff0000); }
     }
 
-    /* 7. CLASSY ACADEMIC MOTIVATIONAL BOARDS */
+    /* 6. CLASSY ACADEMIC MOTIVATIONAL BOARDS */
     .classy-scroll-card {
         background: rgba(30, 0, 4, 0.96);
         font-size: 1.25rem !important;
@@ -139,9 +132,8 @@ st.markdown("""
     }
 
     @keyframes cardColorShift {
-        0% { border-color: #ff004c; color: #ffeaea; box-shadow: 0 0 20px rgba(255,0,76,0.3); }
-        50% { border-color: #ff4d6d; color: #fff5f5; box-shadow: 0 0 35px rgba(255,77,109,0.5); }
-        100% { border-color: #ff7675; color: #ffcccc; box-shadow: 0 0 20px rgba(255,118,117,0.3); }
+        0% { border-color: #ff004c; color: #ffeaea; }
+        100% { border-color: #ff7675; color: #ffcccc; }
     }
 
     .chapter-tag {
@@ -152,22 +144,15 @@ st.markdown("""
         letter-spacing: 3px;
         color: #ff4d6d;
         margin-bottom: 15px;
-        animation: tagColor 4s infinite alternate;
     }
 
-    @keyframes tagColor {
-        0% { color: #ff004c; text-shadow: 0 0 5px #ff004c; }
-        100% { color: #ffffff; text-shadow: 0 0 10px #ffffff; }
-    }
-
-    /* 8. TYPEWRITER ENGINE WITH 100% TEXT WRAPPING FIX */
+    /* 7. HIGH-LEVEL TYPEWRITER ENGINE */
     .typewriter-box {
         margin: 35px 0;
         background: rgba(0, 0, 0, 0.4);
         padding: 25px 15px;
         border-radius: 15px;
         border: 1px dashed #ff4d6d;
-        box-shadow: 0 0 15px rgba(255,0,76,0.2);
     }
 
     .typewriter-text {
@@ -193,54 +178,42 @@ st.markdown("""
         from, to { border-color: transparent }
         50% { border-color: #ff004c; }
     }
-
-    /* 9. ROYAL RED CELEBRATION BUTTON */
-    div.stButton > button:first-child {
-        background: linear-gradient(45deg, #ff004c, #ff4d6d) !important;
-        color: #ffffff !important;
-        font-size: 1.25rem !important;
-        font-weight: bold !important;
-        border-radius: 50px !important;
-        padding: 12px 35px !important;
-        border: 2px solid #ffffff !important;
-        box-shadow: 0 12px 40px rgba(255, 0, 76, 0.7) !important;
-        width: 100%;
-        margin-top: 20px;
-        margin-bottom: 60px;
-        transition: all 0.3s ease-in-out;
-    }
-    
-    div.stButton > button:first-child:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 15px 50px #ff0000 !important;
-    }
     </style>
 """, unsafe_allow_html=True)
 
 # Main App execution shell
 st.markdown('<div class="screenshot-layout-shell">', unsafe_allow_html=True)
 
-# RESPECTFUL MENTOR IDENTIFIER TAG WITH PYARA EMOJI
+# RESPECTFUL TAG
 st.markdown('<p class="sender-tag">🎓 WISHING AN EXCEPTIONAL STUDENT ✨</p>', unsafe_allow_html=True)
 
-# THE GRAND SHINY HAPPY BIRTHDAY BOLD TITLE (DYNAMIC GREEN SHIFT)
+# THE GRAND SHINY HAPPY BIRTHDAY BOLD TITLE
 st.markdown('<h1 class="giant-neon-birthday">HAPPY BIRTHDAY<br>ANSHIKA 🌹</h1>', unsafe_allow_html=True)
 
-# --- AUTOMATIC IMAGE RESOLVER FOR UPLOADED FILE ---
-# Directly checking the exact name from your GitHub repository
-target_photo = "rotated_photo_only~2.jpg"
+# --- NEW SIDE-BY-SIDE SIDE PANEL ENGINE ---
+col1, col2 = st.columns([1.1, 1])
 
-if os.path.exists(target_photo):
-    st.image(target_photo, use_container_width=True)
-else:
-    # Internet fallback avatar if file path encounters rendering latency
-    st.image("https://unsplash.com", use_container_width=True)
+with col1:
+    target_photo = "rotated_photo_only~2.jpg"
+    if os.path.exists(target_photo):
+        st.image(target_photo, use_container_width=True)
+    else:
+        st.image("https://unsplash.com", use_container_width=True)
+
+with col2:
+    st.markdown("""
+        <div class="side-text-panel">
+            ✨ Pure Brilliance ✨ <br><br>
+            💫 Outstanding Scholar 🎓 <br><br>
+            🌹 Absolute Grace 🌟
+        </div>
+    """, unsafe_allow_html=True)
+
+# Automatic runtime background balloons release
+st.balloons()
 
 # THE DYNAMIC FAST DHADAKTA HUA DIL ENGINE
 st.markdown('<div class="heart-engine-box"><span class="ultimate-fast-heart">❤️</span></div>', unsafe_allow_html=True)
-
-# TOP BADGE WITH CLASSY EMOJIS
-st.markdown('<div class="love-ribbon-badge">✨ DEDICATION & EXCELLENCE 🎓</div>', unsafe_allow_html=True)
 
 # --- REFINED ELITE ENGLISH MOTIVATIONAL BOARDS ---
 st.markdown("""
@@ -263,12 +236,5 @@ st.markdown("""
         <div class="typewriter-text">Happy Birthday Anshika! ✨</div>
     </div>
 """, unsafe_allow_html=True)
-
-# GRAND MENTOR CELEBRATION TRIGGER
-if st.button("🌹 CLICK FOR ANSHIKA'S SUCCESS CELEBRATION! 🌹"):
-    st.balloons()
-    st.snow()
-    st.toast("Wishing Anshika excellence! 🎓✨", icon="❤️")
-    st.success("🎉 Happy Birthday, Anshika! Wishing you outstanding career breakthroughs, wisdom, and phenomenal milestones ahead! 🎓🚀🌟")
 
 st.markdown('</div>', unsafe_allow_html=True)
