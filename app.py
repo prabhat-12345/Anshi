@@ -3,7 +3,7 @@ import streamlit as st
 # Custom canvas page configurations for a highly professional setup
 st.set_page_config(page_title="Happy Birthday Anshika! ✨", page_icon="🎓", layout="centered")
 
-# 100% Pure Intense Liquid Red Canvas & Wide-Screen Typewriter Machine
+# 100% Pure Intense Liquid Red Canvas & Shifting Green Neon Header
 st.markdown("""
     <style>
     /* 1. LIQUID NEON SHIFTING BACKGROUND */
@@ -45,30 +45,31 @@ st.markdown("""
         100% { opacity: 1; text-shadow: 0 0 15px #ff7675; }
     }
 
-    /* 3. GLOWING BOLD HAPPY BIRTHDAY HEADER WITH REFLECTIONS */
+    /* 3. DYNAMIC EMERALD GREEN HAPPY BIRTHDAY HEADER WITH DYNAMIC COLOR WAVE */
     .giant-neon-birthday {
         font-size: 3.8rem !important;
         font-weight: 900 !important;
         text-transform: uppercase;
         line-height: 1.2;
         letter-spacing: 2px;
-        background: linear-gradient(45deg, #ff004c, #ff4d6d, #ffffff, #ff7675);
+        /* Core Green Matrix Shifting Colors Gradient */
+        background: linear-gradient(45deg, #00ff7f, #00eb00, #adff2f, #00ffaa, #ff004c);
         background-size: 300% 300%;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        animation: lightShine 3s linear infinite, extremeGlow 1.8s ease-in-out infinite alternate;
+        animation: greenLightShine 4s linear infinite, greenExtremeGlow 2s ease-in-out infinite alternate;
         margin-top: 15px;
         margin-bottom: 25px;
     }
 
-    @keyframes lightShine {
+    @keyframes greenLightShine {
         0% { background-position: 0% 50%; }
         100% { background-position: 100% 50%; }
     }
 
-    @keyframes extremeGlow {
-        0% { filter: drop-shadow(0 0 12px #ff004c); }
-        100% { filter: drop-shadow(0 0 32px #ff7675); }
+    @keyframes greenExtremeGlow {
+        0% { filter: drop-shadow(0 0 12px rgba(0, 255, 127, 0.6)); }
+        100% { filter: drop-shadow(0 0 35px rgba(0, 235, 0, 0.9)); }
     }
 
     /* 4. DYNAMIC STATUS RIBBON BADGES - SHIFTING CRIMSON BORDERS */
@@ -167,7 +168,7 @@ st.markdown("""
         margin: 0 auto;
         letter-spacing: .05em;
         display: block;
-        width: 25ch; /* Exact character count of string to block cuts */
+        width: 25ch;
         animation: typing 4s steps(25, end) infinite, blink-caret .75s step-end infinite;
     }
 
@@ -210,10 +211,10 @@ st.markdown('<div class="screenshot-layout-shell">', unsafe_allow_html=True)
 # RESPECTFUL MENTOR IDENTIFIER TAG WITH PYARA EMOJI
 st.markdown('<p class="sender-tag">🎓 WISHING AN EXCEPTIONAL STUDENT ✨</p>', unsafe_allow_html=True)
 
-# THE GRAND SHINY HAPPY BIRTHDAY BOLD TITLE
+# THE GRAND SHINY HAPPY BIRTHDAY BOLD TITLE (NOW DYNAMIC GREEN SHIFT)
 st.markdown('<h1 class="giant-neon-birthday">HAPPY BIRTHDAY<br>ANSHIKA 🌹</h1>', unsafe_allow_html=True)
 
-# THE DYNAMIC FAST DHADAKTA HUA DIL ENGINE (Perfect alignment)
+# THE DYNAMIC FAST DHADAKTA HUA DIL ENGINE
 st.markdown('<div class="heart-engine-box"><span class="ultimate-fast-heart">❤️</span></div>', unsafe_allow_html=True)
 
 # TOP BADGE WITH CLASSY EMOJIS
@@ -234,7 +235,7 @@ st.markdown("""
     </div>
 """, unsafe_allow_html=True)
 
-# --- FIXED TYPEWRITER AUTOMATIC LETTER MACHINE (Full text visible) ---
+# --- FIXED TYPEWRITER AUTOMATIC LETTER MACHINE ---
 st.markdown("""
     <div class="typewriter-box">
         <div class="typewriter-text">Happy Birthday Anshika! ✨</div>
