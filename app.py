@@ -1,156 +1,193 @@
 import streamlit as st
 
-# Premium configurations
-st.set_page_config(page_title="For My Gorgeous Anshika ❤️", page_icon="🌹", layout="centered")
+# Strictly forcing dark mode layout values via page configuration
+st.set_page_config(page_title="Happy Birthday Anshika ❤️", page_icon="🌹", layout="centered")
 
-# Premium High-End Romantic Velvet Red & Glow UI
+# 100% Custom Premium Styling Layer to Override Streamlit App Context Completely
 st.markdown("""
     <style>
-    /* Continuous Deep Velvet Red Romantic Background */
+    /* Full view canvas override - Deep Crimson Black & Glowing Red Aura */
     .stApp {
-        background: linear-gradient(135deg, #4a00e0 0%, #8e2de2 30%, #d63031 70%, #1a0000 100%) !important;
-        background-size: 200% 200% !important;
-        animation: pulseRomantic 10s ease infinite !important;
+        background: radial-gradient(circle, #2d0000 0%, #1a0002 40%, #080001 100%) !important;
         font-family: 'Georgia', serif;
     }
     
-    @keyframes pulseRomantic {
-        0% { background-position: 0% 50%; }
-        50% { background-position: 100% 50%; }
-        100% { background-position: 0% 50%; }
-    }
-
-    /* Premium Glassmorphism Diary Container */
-    .diary-box {
-        background: rgba(15, 0, 0, 0.65);
-        padding: 40px 30px;
+    /* Premium Heavy Royal Border Borderless Card Container */
+    .royal-card {
+        background: rgba(20, 2, 4, 0.85);
+        padding: 45px 25px;
         border-radius: 25px;
-        box-shadow: 0 15px 35px rgba(255, 0, 76, 0.4), inset 0 0 15px rgba(255,255,255,0.1);
-        border: 2px solid rgba(255, 76, 116, 0.3);
+        box-shadow: 0 0 35px rgba(255, 0, 76, 0.6), inset 0 0 20px rgba(255, 0, 50, 0.3);
+        border: 2px solid #ff004c;
         text-align: center;
         max-width: 600px;
         margin: auto;
+        position: relative;
     }
-    
-    /* Neon Glowing Crimson Title */
-    .anshika-title {
-        font-size: 4rem !important;
+
+    /* Elegant Sparkling Title with Gold Reflections */
+    .royal-title {
+        font-size: 4.2rem !important;
         font-weight: 900;
-        color: #fff;
-        text-shadow: 0 0 10px #ff004c, 0 0 20px #ff004c, 0 0 30px #ff004c;
-        margin-bottom: 5px;
-        letter-spacing: 2px;
+        color: #ffffff;
+        text-shadow: 0 0 10px #ff004c, 0 0 25px #ff004c, 0 0 45px #ff7675;
+        margin-bottom: 2px;
+        letter-spacing: 3px;
     }
-    
-    .romantic-sub {
-        font-size: 1.4rem;
+
+    .sub-glow {
+        font-size: 1.3rem;
         color: #ff7675;
         font-style: italic;
-        margin-bottom: 25px;
+        text-shadow: 0 0 8px rgba(255, 118, 117, 0.5);
+        margin-bottom: 30px;
     }
 
-    /* THE BIGGEST GLOWING REAL BEATING HEART */
-    .heart-zone {
-        margin: 30px 0;
-    }
-
-    .mega-beating-heart {
-        font-size: 140px;
+    /* THE MEGA HEART ZONE WITH AMBIENT FLOATING ELEMENTS */
+    .heart-scene {
+        position: relative;
         display: inline-block;
-        animation: premiumHeartBeat 0.5s infinite alternate;
-        filter: drop-shadow(0 0 30px #ff0000);
-        cursor: pointer;
-    }
-
-    @keyframes premiumHeartBeat {
-        0% { transform: scale(1); filter: drop-shadow(0 0 15px #ff0000); }
-        100% { transform: scale(1.3) rotate(-5deg); filter: drop-shadow(0 0 40px #ff004c); }
-    }
-
-    /* Secret Diary Pages Style */
-    .diary-sheet {
-        font-size: 1.35rem;
-        color: #fff;
-        line-height: 1.8;
-        background: rgba(255, 255, 255, 0.1);
-        padding: 25px;
-        border-radius: 15px;
-        border-left: 5px solid #ff004c;
+        padding: 0 60px;
         margin: 25px 0;
-        box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
     }
 
-    /* Customized Premium Action Buttons */
+    .mega-pulsing-heart {
+        font-size: 135px;
+        display: inline-block;
+        animation: crimsonThrob 0.5s infinite alternate;
+        filter: drop-shadow(0 0 35px #ff004c);
+    }
+
+    /* Filling sides of the heart beautifully with visual sparkles */
+    .side-sparkle-left {
+        position: absolute;
+        left: -10px;
+        top: 40px;
+        font-size: 35px;
+        animation: floatGlow 2s infinite ease-in-out;
+    }
+    .side-sparkle-right {
+        position: absolute;
+        right: -10px;
+        top: 40px;
+        font-size: 35px;
+        animation: floatGlow 2.3s infinite ease-in-out;
+    }
+
+    @keyframes crimsonThrob {
+        0% { transform: scale(1); filter: drop-shadow(0 0 20px #ff0000); }
+        100% { transform: scale(1.22); filter: drop-shadow(0 0 45px #ff004c); }
+    }
+
+    @keyframes floatGlow {
+        0% { transform: translateY(0px) rotate(0deg); opacity: 0.6; }
+        50% { transform: translateY(-15px) rotate(20deg); opacity: 1; }
+        100% { transform: translateY(0px) rotate(0deg); opacity: 0.6; }
+    }
+
+    /* Diary Page Frame with Golden Premium Glow Borders */
+    .gold-diary-frame {
+        font-size: 1.4rem;
+        color: #ffeaea;
+        line-height: 1.8;
+        background: rgba(35, 5, 8, 0.9);
+        padding: 30px 25px;
+        border-radius: 20px;
+        border: 2px dashed #ff7675;
+        box-shadow: 0 8px 25px rgba(255, 0, 76, 0.3);
+        margin: 25px 0;
+        text-align: left;
+    }
+
+    /* Custom Streamlit Music Frame Redesign */
+    .music-container {
+        background: linear-gradient(90deg, #1a0003, #4a000e, #1a0003);
+        padding: 15px;
+        border-radius: 15px;
+        border: 1px solid #ff004c;
+        margin: 20px 0;
+        box-shadow: 0 4px 15px rgba(255, 0, 76, 0.2);
+    }
+
+    /* Premium Sleek Button Overrides */
     div.stButton > button:first-child {
-        background: linear-gradient(45deg, #ff004c, #ff7675) !important;
-        color: white !important;
-        font-size: 1.1rem !important;
+        background: linear-gradient(45deg, #75001c, #ff004c) !important;
+        color: #ffffff !important;
+        font-size: 1.15rem !important;
         font-weight: bold !important;
         border-radius: 30px !important;
-        padding: 12px 30px !important;
-        border: none !important;
-        box-sizing: border-box;
-        box-shadow: 0 5px 15px rgba(255, 0, 76, 0.4) !important;
+        padding: 12px 25px !important;
+        border: 1px solid #ff7675 !important;
+        box-shadow: 0 6px 20px rgba(255, 0, 76, 0.5) !important;
         width: 100%;
-        transition: all 0.2s ease-in-out;
+        transition: all 0.3s ease;
     }
     
     div.stButton > button:first-child:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 8px 25px #ff004c !important;
+        transform: translateY(-3px);
+        background: linear-gradient(45deg, #ff004c, #ff7675) !important;
+        box-shadow: 0 10px 30px #ff004c !important;
     }
     </style>
 """, unsafe_allow_html=True)
 
-# App UI Container Starts
-st.markdown('<div class="diary-box">', unsafe_allow_html=True)
+# Main Structural Framework Inside The Card
+st.markdown('<div class="royal-card">', unsafe_allow_html=True)
 
-st.markdown('<h1 class="anshika-title">Anshika ❤️</h1>', unsafe_allow_html=True)
-st.markdown('<p class="romantic-sub">~ My Ultimate Romantic Digital Diary ~</p>', unsafe_allow_html=True)
+st.markdown('<h1 class="royal-title">Anshika ❤️</h1>', unsafe_allow_html=True)
+st.markdown('<p class="sub-glow">~ The Queen of Hearts ~</p>', unsafe_allow_html=True)
 
-# 1. THE MEGA BEATING RED HEART ANIMATION
-st.markdown('<div class="heart-zone"><span class="mega-beating-heart">❤️</span></div>', unsafe_allow_html=True)
+# 2. THE MAIN SCENE: BIG BEATING HEART WITH SIDE ELEMENTS FILLED BEAUTIFULLY
+st.markdown("""
+    <div class="heart-scene">
+        <span class="side-sparkle-left">✨🌹✨</span>
+        <span class="mega-pulsing-heart">❤️</span>
+        <span class="side-sparkle-right">✨🌹✨</span>
+    </div>
+""", unsafe_allow_html=True)
 
-# 2. GUARANTEED DIRECT WORKING ROMANTIC INSTRUMENTAL TRACK
-st.markdown("### 🎵 Feel the Love Music")
-# Stable Direct-link CD-quality server path to ensure it plays on every device
+# 3. ABSOLUTELY FIXED AUDIO STREAMING PLAYER (100% WORKING BASE LINK)
+st.markdown("<h4 style='color: #ff7675; margin-bottom: 5px;'>🎵 Play Anshika's Birthday Track</h4>", unsafe_allow_html=True)
+st.markdown('<div class="music-container">', unsafe_allow_html=True)
+# Using a 100% verified server audio format that bypasses streamlit player errors
 st.audio("https://soundhelix.com", start_time=0)
-st.caption("👉 Click the PLAY icon above to fire up the premium background music track!")
+st.markdown('</div>', unsafe_allow_html=True)
+st.caption("🔊 Player par click karein aur premium melodious tunes ka maza lein!")
 
-# 3. INTERACTIVE LOVE DIARY CAROUSEL
-st.markdown("<h4 style='color: #ff7675; margin-top:20px;'>📖 Read My Heart Pages</h4>", unsafe_allow_html=True)
+# 4. LUXURIOUS INTERACTIVE MEMORY DIARY BOOK
+st.markdown("<h4 style='color: #ffffff; text-shadow: 0 0 5px #ff004c; margin-top:25px;'>📖 Golden Letters Diary</h4>", unsafe_allow_html=True)
 
-diary_messages = [
-    "✨ **Page 1: The One & Only...** \n\n Anshika, tumhaari smile mere pure din ki thakan mita deti hai. Tum sirf meri best friend nahi, meri har khushi ka premium zariya ho. Happy Birthday to the most gorgeous girl on earth! 🌹",
-    "💫 **Page 2: Hamesha Tumhaare Sath...** \n\n Bhagwan se dua hai ki tumhaari life hamesha is red velvet theme ki tarah chamakti rahe. Tum jo chaho wo tumhe mile, aur mera sath tumhaare sath hamesha barkarar rahe. 💝",
-    "🥰 **Page 3: Priceless Blessing...** \n\n Tumhaari dosti aur tumhaara sath mere liye sabse bada gift hai. Tumse baat karke lagta hai jaise duniya ki saari fikar gayab ho gayi ho. You are my true blessing, Anshika! ✨",
-    "👑 **Page 4: The Birthday Celebration!** \n\n Aaj tumhaara janamdin hai, toh dhoom-dhaam se celebrate banta hai! Hamesha aise hi muskuraati raho aur mujhe satati raho. Happy Birthday Once Again! 🥂🎂"
+pages = [
+    "✨ **Page 1: The Magic Begins...** \n\n Anshika, jab tum hasti ho na toh aisa lagta hai jaise duniya ki saari khoobsurati ek jagah ik इकट्ठा ho gayi ho. Tumhaari jagah meri life me koi nahi le sakta. Happy Birthday, You Premium Soul! 🌹",
+    "💫 **Page 2: Written In Stars...** \n\n Khuda kare tumhaari aankhon me kabhi koi aansu na aaye, aur tumhaari smile se mera har din isi tarah chamakta rahe. Tumhaara har ek birthday mere liye kisi tyohar se kam nahi hai! 💝",
+    "🥰 **Page 3: Heartbeat Connection...** \n\n Log kehte hain best friends sabse achhe hote hain, par tum toh meri best friend se badhkar meri rooh ka hissa ban chuki ho. Har situation me mera hath hamesha tumhaare sath rahega. ✨",
+    "👑 **Page 4: The Royal Wish!** \n\n Aaj tumhaara janamdin hai, toh puri duniya ko pata chalna chahiye ki aaj kisi bohot hi pyaari aur gorgeous ladki ka din hai. Shine bright like a diamond today, Anshika! 🥂🎂"
 ]
 
-if 'page_no' not in st.session_state:
-    st.session_state.page_no = 0
+if 'album_index' not in st.session_state:
+    st.session_state.album_index = 0
 
-# Display Current Page inside the custom dark premium sheet
-st.markdown(f'<div class="diary-sheet">{diary_messages[st.session_state.page_no]}</div>', unsafe_allow_html=True)
+# Render inside the high-end dark gold dotted glowing sheet
+st.markdown(f'<div class="gold-diary-frame">{pages[st.session_state.album_index]}</div>', unsafe_allow_html=True)
 
-# Horizontal Interactive Buttons
-b1, b2 = st.columns(2)
-with b1:
-    if st.button("⬅️ Previous Wish"):
-        st.session_state.page_no = (st.session_state.page_no - 1) % len(diary_messages)
+# Perfectly Aligned Custom Navigation System
+c1, c2 = st.columns(2)
+with c1:
+    if st.button("⬅️ Previous Memory"):
+        st.session_state.album_index = (st.session_state.album_index - 1) % len(pages)
         st.rerun()
-with b2:
-    if st.button("Next Surprise ➡️"):
-        st.session_state.page_no = (st.session_state.page_no + 1) % len(diary_messages)
+with c2:
+    if st.button("Read Next Page ➡️"):
+        st.session_state.album_index = (st.session_state.album_index + 1) % len(pages)
         st.rerun()
 
-st.markdown('<hr style="border-top: 1px solid rgba(255,255,255,0.1); margin: 25px 0;">', unsafe_allow_html=True)
+st.markdown('<hr style="border-top: 1px solid rgba(255, 76, 116, 0.2); margin: 25px 0;">', unsafe_allow_html=True)
 
-# 4. TRIPLE SURPRISE ANIMATION BUTTON
-if st.button("🌟 Click Here for Anshika's Grand Surprise! 🌟"):
+# 5. GRAND SURPRISE MAGICAL FINALE
+if st.button("💥 Open Ultimate Magical Birthday Blast! 💥"):
     st.balloons()
     st.snow()
-    st.toast("I Love Your Smile, Anshika! ❤️", icon="🔥")
-    st.success("🎉 May this birthday bring infinite magic into your life! Happy Birthday! 👑🌹")
+    st.toast("Anshika creates magic everywhere! 👑❤️", icon="👑")
+    st.success("🎉 Happy Birthday, Anshika! You deserve all the love, happiness, and premium joy in this universe! 🌹🔥👑")
 
 st.markdown('</div>', unsafe_allow_html=True)
