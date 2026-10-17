@@ -4,11 +4,11 @@ import os
 # Custom canvas page configurations for an elite setup
 st.set_page_config(page_title="Happy Birthday Anshika! ✨", page_icon="🎓", layout="centered")
 
-# Trigger automatic beautiful runtime graphics continuously on page load
+# Continuous automatic snowfall & balloons animation trigger instantly
 st.snow()
 st.balloons()
 
-# 100% Stable Custom HTML CSS Injection to completely bypass variable errors
+# Intense Shifting Red Canvas & Rigid HTML Table Grid Formatting
 st.markdown("""
     <style>
     /* 1. LIQUID NEON SHIFTING INTENSE RED BACKGROUND */
@@ -76,25 +76,32 @@ st.markdown("""
         100% { filter: drop-shadow(0 0 35px rgba(0, 235, 0, 0.9)); }
     }
 
-    /* 4. SHIFTING FLEX GRID SYSTEM FOR STABLE MOBILE SIDE VIEW */
-    .stable-inline-flex {
-        display: flex !important;
-        flex-direction: row !important;
-        justify-content: space-between !important;
-        align-items: center !important;
+    /* 4. HARD-LOCKED HTML TABLE ALIGNMENT PACK (Prevents center stacking) */
+    .rigid-layout-table {
         width: 100% !important;
-        margin: 25px 0 !important;
-        gap: 12px !important;
+        border-collapse: collapse !important;
+        margin: 20px 0 !important;
+        border: none !important;
     }
 
-    .left-aligned-photo {
-        flex: 1.2 !important;
-        max-width: 52% !important;
+    .photo-td-cell {
+        width: 50% !important;
+        padding-right: 8px !important;
+        vertical-align: middle !important;
+        text-align: left !important;
     }
 
-    /* 5. GORGEOUS ROMANTIC DECORATED RED NEON PHOTO FRAME */
-    .left-aligned-photo img {
+    .decor-td-cell {
+        width: 50% !important;
+        padding-left: 8px !important;
+        vertical-align: middle !important;
+        text-align: right !important;
+    }
+
+    /* 5. ROMANTIC DECORATED RED NEON PHOTO FRAME */
+    .photo-td-cell img {
         width: 100% !important;
+        max-width: 280px !important;
         border-radius: 20px !important;
         border: 4px solid #ff004c !important;
         box-shadow: 0 0 20px #ff004c, 0 10px 30px rgba(255,0,76,0.6) !important;
@@ -107,25 +114,20 @@ st.markdown("""
         100% { border-color: #ffffff; filter: drop-shadow(0 0 20px #ff7675); }
     }
 
-    .right-decorated-panel {
-        flex: 1 !important;
-        max-width: 46% !important;
-    }
-
     /* 6. ROMANTIC DECORATIVE INNER CONTAINER IN RIGHT COLUMN */
     .dynamic-love-board {
         background: rgba(30, 0, 4, 0.95) !important;
         color: #ffffff !important;
         font-size: 1.15rem !important;
         font-weight: bold !important;
-        padding: 20px 12px !important;
+        padding: 22px 12px !important;
         border-radius: 15px !important;
         border: 2px solid #ff004c !important;
         box-shadow: 0 8px 25px rgba(255, 0, 76, 0.5) !important;
         text-align: center !important;
         display: flex !important;
         flex-direction: column !important;
-        gap: 14px !important;
+        gap: 15px !important;
         animation: panelGlowWave 4s infinite alternate !important;
     }
 
@@ -136,7 +138,7 @@ st.markdown("""
 
     .heart-bullet {
         color: #ff004c;
-        font-size: 1.25rem;
+        font-size: 1.3rem;
         display: inline-block;
         animation: throbEffect 0.5s infinite alternate;
     }
@@ -237,25 +239,25 @@ st.markdown('<p class="sender-tag">🎓 WISHING AN EXCEPTIONAL STUDENT ✨</p>',
 # THE GRAND SHINY HAPPY BIRTHDAY BOLD TITLE
 st.markdown('<h1 class="giant-neon-birthday">HAPPY BIRTHDAY<br>ANSHIKA 🌹</h1>', unsafe_allow_html=True)
 
-# --- STABLE INLINE FLEX GRID ENGINE (Photo strictly left, text decorated right) ---
+# --- STRICT MULTI-COLUMN TABLE ENGINE (No center reset allowed) ---
 target_photo = "rotated_photo_only~2.jpg"
 
-# Loading image cleanly via standard streamlit framework layer inside columns to guarantee stability
-c1, c2 = st.columns([1.1, 1])
-with c1:
-    if os.path.exists(target_photo):
-        st.image(target_photo, use_container_width=True)
-    else:
-        st.image("https://unsplash.com", use_container_width=True)
-
-with c2:
-    st.markdown("""
-        <div class="dynamic-love-board">
-            <div><span class="heart-bullet">❤️</span> Pure Brilliance <span class="heart-bullet">❤️</span></div>
-            <div><span class="heart-bullet">🌹</span> Outstanding Scholar 🎓</div>
-            <div><span class="heart-bullet">✨</span> Absolute Grace 💘</div>
-        </div>
-    """, unsafe_allow_html=True)
+st.markdown(f"""
+    <table class="rigid-layout-table">
+        <tr>
+            <td class="photo-td-cell">
+                <img src="https://githubusercontent.com{target_photo}" onerror="this.src='https://unsplash.com'">
+            </td>
+            <td class="decor-td-cell">
+                <div class="dynamic-love-board">
+                    <div><span class="heart-bullet">❤️</span> Pure Brilliance <span class="heart-bullet">❤️</span></div>
+                    <div><span class="heart-bullet">🌹</span> Outstanding Scholar 🎓</div>
+                    <div><span class="heart-bullet">✨</span> Absolute Grace 💘</div>
+                </div>
+            </td>
+        </tr>
+    </table>
+""", unsafe_allow_html=True)
 
 # THE DYNAMIC FAST DHADAKTA HUA DIL ENGINE
 st.markdown('<div class="heart-engine-box"><span class="ultimate-fast-heart">❤️</span></div>', unsafe_allow_html=True)
