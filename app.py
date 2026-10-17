@@ -1,14 +1,14 @@
 import streamlit as st
 
 # Custom canvas page configurations
-st.set_page_config(page_title="Happy Birthday Anshika! ✨", page_icon="🎓", layout="centered")
+st.set_page_config(page_title="Happy Birthday Anshika! ✨", page_icon="🌹", layout="centered")
 
-# 100% Pure Royal Crimson Red & Gold Classy Style Overwrite
+# 100% Pure Intense Crimson Red & Silver Premium Style Overwrite
 st.markdown("""
     <style>
-    /* Full view intense premium dark red velvet gradient */
+    /* Full view intense premium dark red velvet gradient - Absolutely No Yellow */
     .stApp {
-        background: radial-gradient(circle at center, #8a000c 0%, #4a0005 50%, #210002 100%) !important;
+        background: radial-gradient(circle at center, #9e000e 0%, #4a0005 50%, #1c0002 100%) !important;
         font-family: 'Poppins', 'Georgia', serif;
         overflow-x: hidden;
     }
@@ -21,25 +21,25 @@ st.markdown("""
         padding: 10px;
     }
 
-    /* 1. ELITE TOP SENDER TAG */
+    /* 1. ELITE TOP SENDER TAG IN PURE RED GLOW */
     .sender-tag {
         font-size: 1.3rem;
         font-weight: bold;
-        color: #ffd700;
+        color: #ff4d6d;
         letter-spacing: 3px;
         text-transform: uppercase;
         margin-top: 15px;
         text-shadow: 0 0 10px #ff004c;
     }
 
-    /* 2. SABSE BADA GLOWING BOLD HAPPY BIRTHDAY HEADER */
+    /* 2. SABSE BADA GLOWING BOLD HAPPY BIRTHDAY HEADER - ONLY RED & WHITE SHINE */
     .giant-neon-birthday {
         font-size: 4.5rem !important;
         font-weight: 900 !important;
         text-transform: uppercase;
         line-height: 1.1;
         letter-spacing: 2px;
-        background: linear-gradient(45deg, #ff3366, #ffd700, #ff7675, #ffffff);
+        background: linear-gradient(45deg, #ff004c, #ff4d6d, #ff7675, #ffffff);
         background-size: 300% 300%;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -55,12 +55,12 @@ st.markdown("""
 
     @keyframes extremeGlow {
         0% { filter: drop-shadow(0 0 15px #ff004c); }
-        100% { filter: drop-shadow(0 0 35px #ffd700); }
+        100% { filter: drop-shadow(0 0 35px #ff4d6d); }
     }
 
-    /* 3. DYNAMIC STATUS RIBBON BADGES */
+    /* 3. DYNAMIC STATUS RIBBON BADGES - PURE CRIMSON AURA */
     .love-ribbon-badge {
-        background: rgba(255, 215, 0, 0.1);
+        background: rgba(255, 0, 76, 0.15);
         color: #ffffff;
         font-size: 1.3rem !important;
         font-weight: bold;
@@ -70,25 +70,25 @@ st.markdown("""
         display: inline-block;
         border: 2px solid;
         margin: 20px auto;
-        box-shadow: 0 0 20px rgba(255, 0, 76, 0.4);
+        box-shadow: 0 0 20px rgba(255, 0, 76, 0.5);
         animation: borderShift 5s infinite alternate;
     }
 
     @keyframes borderShift {
         0% { border-color: #ff004c; box-shadow: 0 0 20px #ff004c; }
-        50% { border-color: #ffd700; box-shadow: 0 0 30px #ffd700; }
-        100% { border-color: #ff3366; box-shadow: 0 0 20px #ff3366; }
+        50% { border-color: #ff4d6d; box-shadow: 0 0 35px #ff4d6d; }
+        100% { border-color: #ff7675; box-shadow: 0 0 20px #ff7675; }
     }
 
-    /* 4. THE MASTERPIECE PHOTO FRAME BOX WITH SOLID NEON REFLECTION */
+    /* 4. THE MASTERPIECE PHOTO FRAME BOX WITH SOLID CRIMSON REFLECTION */
     .photo-frame-outer {
         position: relative;
         max-width: 320px;
         margin: 25px auto;
         border-radius: 25px;
         padding: 6px;
-        background: linear-gradient(45deg, #ff004c, #ffd700, #ff3366);
-        box-shadow: 0 15px 45px rgba(255, 0, 76, 0.7);
+        background: linear-gradient(45deg, #ff004c, #ff4d6d, #ff7675);
+        box-shadow: 0 15px 45px rgba(255, 0, 76, 0.8);
     }
 
     .photo-frame-inner {
@@ -103,9 +103,9 @@ st.markdown("""
         display: block;
     }
 
-    /* 5. CLASSY & HIGH-LEVEL DYNAMIC ENGLISH TEXT BOARDS */
+    /* 5. CLASSY & HIGH-LEVEL DYNAMIC RED BOARDS */
     .classy-scroll-card {
-        background: rgba(40, 2, 6, 0.95);
+        background: rgba(45, 0, 6, 0.95);
         color: #ffffff;
         font-size: 1.75rem !important;
         font-weight: bold;
@@ -122,8 +122,8 @@ st.markdown("""
 
     @keyframes cardColorShift {
         0% { border-color: #ff004c; color: #ffeaea; }
-        50% { border-color: #ffd700; color: #fffde6; }
-        100% { border-color: #ff3366; color: #ffcccc; }
+        50% { border-color: #ff4d6d; color: #fff5f5; }
+        100% { border-color: #ff7675; color: #ffcccc; }
     }
 
     .chapter-tag {
@@ -132,15 +132,15 @@ st.markdown("""
         font-weight: 900;
         text-transform: uppercase;
         letter-spacing: 3px;
-        color: #ffd700;
+        color: #ff4d6d;
         margin-bottom: 25px;
         text-shadow: 0 0 8px #ff004c;
     }
 
-    /* 6. ULTIMATE ROYAL CELEBRATION BUTTON */
+    /* 6. ULTIMATE ROYAL RED CELEBRATION BUTTON */
     div.stButton > button:first-child {
-        background: linear-gradient(45deg, #ff004c, #ffd700) !important;
-        color: #000000 !important;
+        background: linear-gradient(45deg, #ff004c, #ff4d6d) !important;
+        color: #ffffff !important;
         font-size: 1.35rem !important;
         font-weight: 900 !important;
         border-radius: 50px !important;
@@ -156,7 +156,6 @@ st.markdown("""
     div.stButton > button:first-child:hover {
         transform: translateY(-5px) scale(1.02);
         box-shadow: 0 20px 60px #ff0000 !important;
-        color: #ffffff !important;
     }
     </style>
 """, unsafe_allow_html=True)
@@ -165,13 +164,13 @@ st.markdown("""
 st.markdown('<div class="screenshot-layout-shell">', unsafe_allow_html=True)
 
 # SENDER DECENT TAG
-st.markdown('<p class="sender-tag">⭐ TO A BRILLIANT STUDENT & DEAR FRIEND ⭐</p>', unsafe_allow_html=True)
+st.markdown('<p class="sender-tag">❤️ TO A BRILLIANT STUDENT & DEAR FRIEND ❤️</p>', unsafe_allow_html=True)
 
 # THE MEGA BOLD HAPPY BIRTHDAY HEADER
-st.markdown('<h1 class="giant-neon-birthday">HAPPY BIRTHDAY<br>ANSHIKA ✨</h1>', unsafe_allow_html=True)
+st.markdown('<h1 class="giant-neon-birthday">HAPPY BIRTHDAY<br>ANSHIKA 🌹</h1>', unsafe_allow_html=True)
 
 # TOP BADGE 1
-st.markdown('<div class="love-ribbon-badge">🌟 INDEPENDENT & BRIGHT 🌟</div>', unsafe_allow_html=True)
+st.markdown('<div class="love-ribbon-badge">❤️ EXCELLENCE & INSPIRATION ❤️</div>', unsafe_allow_html=True)
 
 # --- THE PREMIUM NEON PHOTO FRAME SECTION ---
 # Yahan Anshika ki online uploaded photo ka direct link paste karein
@@ -186,13 +185,13 @@ st.markdown(f"""
 """, unsafe_allow_html=True)
 
 # MID BADGE 2
-st.markdown('<div class="love-ribbon-badge">🎓 SUCCESS & EXCELLENCE 🎓</div>', unsafe_allow_html=True)
+st.markdown('<div class="love-ribbon-badge">🌹 SHINE BRIGHT ALWAYS 🌹</div>', unsafe_allow_html=True)
 
 # --- TWO LARGE CLASSY & ELITE ENGLISH BOARDS ---
 st.markdown("""
     <div class="classy-scroll-card">
         <span class="chapter-tag">✧ AN INSPIRING MENTORSHIP ✧</span>
-        "Anshika, having a student and a friend as dedicated and brilliant as you is truly exceptional. Your intellect, hard work, and positive energy light up every room you walk into. May your beautiful mind achieve wonders. Happy Birthday! 🎓🌟✨"
+        "Anshika, having a student and a friend as dedicated and brilliant as you is truly exceptional. Your intellect, hard work, and positive energy light up every room you walk into. May your beautiful mind achieve wonders. Happy Birthday! 🎓🌹✨"
     </div>
 """, unsafe_allow_html=True)
 
@@ -204,10 +203,10 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # GRAND CELEBRATION BLAST TRIGGER
-if st.button("🎉 CLICK FOR ANSHIKA'S GRAND BIRTHDAY SURPRISE! 🎉"):
+if st.button("🌹 CLICK FOR ANSHIKA'S GRAND BIRTHDAY SURPRISE! 🌹"):
     st.balloons()
     st.snow()
-    st.toast("Anshika is pure excellence! 🎓✨", icon="⭐")
-    st.success("🎉 Happy Birthday, Anshika! Wishing you infinite professional success, joy, and grand milestones! 🎓🚀🌟")
+    st.toast("Anshika is pure excellence! 🌹✨", icon="❤️")
+    st.success("🎉 Happy Birthday, Anshika! Wishing you infinite success, dynamic joy, and grand milestones ahead! 👑🚀🌟")
 
 st.markdown('</div>', unsafe_allow_html=True)
