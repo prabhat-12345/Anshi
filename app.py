@@ -1,152 +1,158 @@
 import streamlit as st
 
-# Setup page config for an absolute premium layout
+# Strictly pushing high-end canvas settings
 st.set_page_config(page_title="Happy Birthday Anshika ❤️", page_icon="👑", layout="centered")
 
-# 100% Pure Custom CSS for Giant Fonts, Neon Birthdays, and Color Changing Aura
+# 100% Responsive CSS to match the premium screenshot blueprint
 st.markdown("""
     <style>
-    /* 1. DYNAMIC ROYAL VELVET BACKGROUND WITH DENSE GLOW */
+    /* Full view canvas configuration - Fluid Crimson and Deep Burgundy */
     .stApp {
-        background: linear-gradient(135deg, #1f0003 0%, #4a000e 25%, #630225 50%, #2d0015 75%, #0f0003 100%) !important;
-        background-size: 400% 400% !important;
-        animation: premiumAura 10s ease infinite !important;
-        font-family: 'Playfair Display', 'Georgia', serif;
+        background: radial-gradient(circle at center, #3d0006 0%, #1a0003 60%, #050001 100%) !important;
+        font-family: 'Poppins', 'Georgia', serif;
         overflow-x: hidden;
     }
-    
-    @keyframes premiumAura {
-        0% { background-position: 0% 50%; }
-        50% { background-position: 100% 50%; }
-        100% { background-position: 0% 50%; }
-    }
 
-    /* 2. THE GRAND ROMANTIC CARD SHELL */
-    .royal-shell {
+    /* Core Content Shell Wrapper */
+    .screenshot-layout-shell {
         text-align: center;
-        max-width: 650px;
+        max-width: 600px;
         margin: auto;
         padding: 10px;
     }
 
-    /* 3. SABSE BADA, BOLD AUR DYNAMIC HAPPY BIRTHDAY STATUS */
-    .giant-birthday-text {
+    /* 1. TOP SENDER & RECEIVER BANNER SETTING */
+    .sender-tag {
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: #ff7675;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-top: 15px;
+        text-shadow: 0 0 8px rgba(255, 118, 117, 0.4);
+    }
+
+    /* 2. SABSE BADA GLOWING BOLD HAPPY BIRTHDAY HEADER */
+    .giant-neon-birthday {
         font-size: 4.8rem !important;
         font-weight: 900 !important;
         text-transform: uppercase;
-        letter-spacing: 4px;
         line-height: 1.1;
+        letter-spacing: 2px;
         background: linear-gradient(45deg, #ff004c, #ffd700, #ff7675, #ffffff);
         background-size: 300% 300%;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        animation: textShine 4s linear infinite, headingGlow 2s ease-in-out infinite alternate;
-        margin-top: 20px;
-        margin-bottom: 5px;
+        animation: lightShine 3s linear infinite, extremeGlow 1.8s ease-in-out infinite alternate;
+        margin-top: 10px;
+        margin-bottom: 25px;
     }
 
-    @keyframes textShine {
+    @keyframes lightShine {
         0% { background-position: 0% 50%; }
         100% { background-position: 100% 50%; }
     }
 
-    @keyframes headingGlow {
-        0% { filter: drop-shadow(0 0 15px rgba(255, 0, 76, 0.6)); }
-        100% { filter: drop-shadow(0 0 35px rgba(255, 215, 0, 0.9)); }
+    @keyframes extremeGlow {
+        0% { filter: drop-shadow(0 0 15px #ff004c); }
+        100% { filter: drop-shadow(0 0 35px #ffd700); }
     }
 
-    /* 4. GORGEOUS GOLDEN NAME STATUS */
-    .queen-name {
-        font-size: 3.8rem !important;
-        font-weight: 800;
-        color: #ffffff;
-        text-shadow: 0 0 15px #ff004c, 0 0 30px #ff7675;
-        letter-spacing: 2px;
-        margin-bottom: 25px;
+    /* 3. DYNAMIC LIFELINE RIBBON BADGES (Changes color dynamically) */
+    .love-ribbon-badge {
+        background: rgba(255, 0, 76, 0.15);
+        color: #ffd700;
+        font-size: 1.4rem !important;
+        font-weight: bold;
+        letter-spacing: 3px;
+        padding: 12px 25px;
+        border-radius: 50px;
+        display: inline-block;
+        border: 2px solid;
+        margin: 20px auto;
+        box-shadow: 0 0 20px rgba(255, 0, 76, 0.4);
+        animation: borderShift 6s infinite alternate;
     }
 
-    /* 5. FAST REAL DHADAKTA HUA DIL ENGINE */
-    .heart-box {
+    @keyframes borderShift {
+        0% { border-color: #ff004c; color: #ffd700; box-shadow: 0 0 20px #ff004c; }
+        50% { border-color: #ffd700; color: #ffffff; box-shadow: 0 0 30px #ffd700; }
+        100% { border-color: #e84393; color: #ffcccc; box-shadow: 0 0 20px #e84393; }
+    }
+
+    /* 4. THE MASTERPIECE PHOTO FRAME BOX WITH SOLID NEON REFLECTION */
+    .photo-frame-outer {
         position: relative;
-        display: inline-block;
-        margin: 20px 0;
+        max-width: 320px;
+        margin: 25px auto;
+        border-radius: 25px;
+        padding: 8px;
+        background: linear-gradient(45deg, #ff004c, #ffd700, #e84393);
+        box-shadow: 0 15px 45px rgba(255, 0, 76, 0.6);
+        animation: rotationGlow 4s linear infinite;
     }
 
-    .infinite-throb-heart {
-        font-size: 160px;
-        display: inline-block;
-        animation: megaThrob 0.42s infinite alternate;
-        filter: drop-shadow(0 0 40px #ff004c);
+    .photo-frame-inner {
+        background: #120002;
+        border-radius: 20px;
+        overflow: hidden;
+        display: block;
     }
 
-    @keyframes megaThrob {
-        0% { transform: scale(1); filter: drop-shadow(0 0 20px #ff0000); }
-        100% { transform: scale(1.28) rotate(4deg); filter: drop-shadow(0 0 55px #ff004c); }
+    .photo-frame-inner img {
+        width: 100%;
+        display: block;
+        transition: transform 0.5s ease;
     }
 
-    .side-sparkle {
-        position: absolute;
-        font-size: 45px;
-        top: 40px;
-        animation: danceSparkle 2s infinite ease-in-out;
-    }
-    .left-s { left: -40px; }
-    .right-s { right: -40px; animation-delay: 0.4s; }
-
-    @keyframes danceSparkle {
-        0%, 100% { transform: translateY(0) scale(1); opacity: 0.8; }
-        50% { transform: translateY(-20px) scale(1.2); opacity: 1; }
+    .photo-frame-inner img:hover {
+        transform: scale(1.05);
     }
 
-    /* 6. TWO DYNAMIC BIG & BOLD PREMIUM QUOTES PANEL */
-    .dynamic-big-quote {
-        background: rgba(20, 0, 5, 0.75);
+    /* 5. DYNAMIC CLASSY BIG QUOTES CONTAINER DOWN THE PAGE */
+    .classy-scroll-card {
+        background: rgba(30, 2, 6, 0.85);
         color: #ffffff;
-        font-size: 1.8rem !important; /* Bold Big Font size */
+        font-size: 1.85rem !important;
         font-weight: bold;
         line-height: 1.7;
-        padding: 35px 30px;
+        padding: 40px 30px;
         border-radius: 25px;
-        border: 2px solid;
-        margin-top: 35px;
-        margin-bottom: 35px;
+        border: 3px solid;
+        margin-top: 40px;
+        margin-bottom: 40px;
         text-align: center;
-        box-shadow: 0 15px 40px rgba(0,0,0,0.6);
-        animation: dynamicBorder &Glow 6s infinite alternate;
-        transition: transform 0.4s ease;
+        box-shadow: 0 15px 40px rgba(0,0,0,0.8);
+        animation: cardColorShift 5s infinite alternate;
     }
 
-    .dynamic-big-quote:hover {
-        transform: scale(1.03) translateY(-5px);
+    @keyframes cardColorShift {
+        0% { border-color: #ff004c; box-shadow: 0 0 25px #ff004c; color: #ffeaea; }
+        50% { border-color: #ffd700; box-shadow: 0 0 35px #ffd700; color: #fffde6; }
+        100% { border-color: #ff3333; box-shadow: 0 0 25px #ff3333; color: #ffcccc; }
     }
 
-    @keyframes dynamicBorder {
-        0% { border-color: #ff004c; box-shadow: 0 0 25px rgba(255, 0, 76, 0.4), inset 0 0 15px rgba(255, 0, 76, 0.2); color: #ffeaea; }
-        50% { border-color: #ffd700; box-shadow: 0 0 35px rgba(255, 215, 0, 0.5), inset 0 0 15px rgba(255, 215, 0, 0.2); color: #fffde6; }
-        100% { border-color: #e84393; box-shadow: 0 0 25px rgba(232, 67, 147, 0.4), inset 0 0 15px rgba(232, 67, 147, 0.2); color: #mfeff5; }
-    }
-
-    .quote-badge {
+    .chapter-tag {
         display: block;
-        font-size: 1rem;
+        font-size: 1.1rem;
         font-weight: 900;
         text-transform: uppercase;
         letter-spacing: 3px;
         color: #ffd700;
-        margin-bottom: 15px;
-        text-shadow: 0 0 5px rgba(255,215,0,0.5);
+        margin-bottom: 20px;
+        text-shadow: 0 0 8px #ff004c;
     }
 
-    /* 7. BLOCKBUSTER CELEBRATION BUTTON AT BOTTOM */
+    /* 6. ULTIMATE ROYAL CELEBRATION BUTTON */
     div.stButton > button:first-child {
-        background: linear-gradient(45deg, #ff004c, #ffd700, #e84393) !important;
+        background: linear-gradient(45deg, #d63031, #ff004c, #ffd700) !important;
         color: #000000 !important;
         font-size: 1.4rem !important;
         font-weight: 900 !important;
         border-radius: 50px !important;
         padding: 15px 40px !important;
         border: 2px solid #ffffff !important;
-        box-shadow: 0 12px 35px rgba(255, 0, 76, 0.7) !important;
+        box-shadow: 0 12px 40px rgba(255, 0, 76, 0.8) !important;
         width: 100%;
         margin-top: 25px;
         margin-bottom: 60px;
@@ -155,48 +161,59 @@ st.markdown("""
     
     div.stButton > button:first-child:hover {
         transform: translateY(-5px) scale(1.02);
-        box-shadow: 0 20px 50px #ff004c !important;
+        box-shadow: 0 20px 60px #ff0000 !important;
         color: #ffffff !important;
     }
     </style>
 """, unsafe_allow_html=True)
 
-# Main Structural Shell Starts
-st.markdown('<div class="royal-shell">', unsafe_allow_html=True)
+# Main Application Execution Framework
+st.markdown('<div class="screenshot-layout-shell">', unsafe_allow_html=True)
 
-# THE GIANT BOLD BIRTHDAY BANNER
-st.markdown('<h1 class="giant-birthday-text">HAPPY BIRTHDAY</h1>', unsafe_allow_html=True)
-st.markdown('<h2 class="queen-name">ANSHIKA ❤️</h2>', unsafe_allow_html=True)
+# SENDER & TOP RECEIVER CAPTION
+st.markdown('<p class="sender-tag">👑 FROM PRABHAT TO HIS LIFELINE 👑</p>', unsafe_allow_html=True)
 
-# THE NON-STOP REAL BEATING HEART ENGINE
-st.markdown("""
-    <div class="heart-box">
-        <span class="side-sparkle left-s">👑🌹</span>
-        <span class="infinite-throb-heart">❤️</span>
-        <span class="side-sparkle right-s">🌹👑</span>
+# THE MEGA BOLD HAPPY BIRTHDAY HEADER BANNER
+st.markdown('<h1 class="giant-neon-birthday">HAPPY BIRTHDAY<br>ANSHIKA ❤️</h1>', unsafe_allow_html=True)
+
+# TOP BADGE 1
+st.markdown('<div class="love-ribbon-badge">💝 YOU ARE MY LIFE 💝</div>', unsafe_allow_html=True)
+
+# --- THE PREMIUM NEON PHOTO FRAME SECTION ---
+# NOTE: Replace the link below with Anshika's actual uploaded image link!
+image_url = "https://unsplash.com"
+
+st.markdown(f"""
+    <div class="photo-frame-outer">
+        <div class="photo-frame-inner">
+            <img src="{image_url}" alt="Anshika's Special Birthday Frame">
+        </div>
     </div>
 """, unsafe_allow_html=True)
 
-# TWO DYNAMIC BIG & BOLD CLASSY QUOTES PANEL (Single vertical page scroll)
+# MID BADGE 2
+st.markdown('<div class="love-ribbon-badge">✨ YOU ARE MY EVERYTHING ✨</div>', unsafe_allow_html=True)
+
+# --- TWO LARGE HIGH-LEVEL ROMANTIC DYNAMIC QUOTE CARDS ---
 st.markdown("""
-    <div class="dynamic-big-quote">
-        <span class="quote-badge">✧ FIRST CHARMING LETTER ✧</span>
-        "Anshika, tumhaari smile me wo jadoo hai jo meri puri duniya ko ek hi pal me roshan kar deta hai. Tum sirf meri sabse achhi dost nahi ho, tum meri zindagi ka sabse khoobsurat aur premium hissa ho! Happy Birthday to the most gorgeous girl in the universe! 🌹✨"
+    <div class="classy-scroll-card">
+        <span class="chapter-tag">✨ MY ULTIMATE CONFESSION ✨</span>
+        "Anshika, tumhaari smile me wo jadoo hai jo meri puri duniya ko ek hi pal me roshan kar deta hai. Tum sirf meri sabse achhi dost nahi ho, tum meri zindagi ka sabse khoobsurat aur premium hissa ho! Happy Birthday to the most gorgeous girl in the universe! 🌹👑✨"
     </div>
 """, unsafe_allow_html=True)
 
 st.markdown("""
-    <div class="dynamic-big-quote">
-        <span class="quote-badge">✧ ETERNAL WISH FOR YOU ✧</span>
-        "Khuda kare tumhaari zindagi ka har ek lamha is canvas ki tarah hamesha sparkling aur colorful rahe. Tumhe zindagi ki har wo premium khushi mile jo tum chaaho, aur mera sath tumhaare sath hamesha aise hi barkarar rahe! Hamesha chamakti raho! 💝💫👑"
+    <div class="classy-scroll-card">
+        <span class="chapter-tag">👑 ETERNAL WISH FOR YOU 👑</span>
+        "Khuda kare tumhaari zindagi ka har ek lamha is red velvet canvas ki tarah hamesha sparkling aur colorful rahe. Tumhe zindagi ki har wo premium khushi mile jo tum chaaho, aur mera sath tumhaare sath hamesha aise hi barkarar rahe! Hamesha chamakti raho! 💝💫🔥"
     </div>
 """, unsafe_allow_html=True)
 
-# THE ULTIMATE DYNAMIC MAGIC SURPRISE FINALE BUTTON
-if st.button("🎁 CLICK FOR ANSHIKA'S ULTIMATE CELEBRATION BLAST! 🎁"):
+# GRAND CELEBRATION BLAST TRIGGER
+if st.button("🎈 CLICK FOR ANSHIKA'S ROYAL BIRTHDAY BLAST! 🎈"):
     st.balloons()
     st.snow()
-    st.toast("Anshika is absolute royalty! 👑❤️", icon="👑")
-    st.success("🎉 Happy Birthday, Anshika! May your life be as gorgeous, grand, and premium as you are! 🌹🔥👑")
+    st.toast("Anshika belongs to pure royalty! 👑🔥", icon="❤️")
+    st.success("🎉 Happy Birthday, Anshika! May your year ahead be as passionate, premium, and stunningly gorgeous as this layout! 🌹🔥👑")
 
 st.markdown('</div>', unsafe_allow_html=True)
