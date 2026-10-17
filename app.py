@@ -4,11 +4,11 @@ import os
 # Custom canvas page configurations for an elite setup
 st.set_page_config(page_title="Happy Birthday Anshika! ✨", page_icon="🎓", layout="centered")
 
-# 100% FORCEFUL AUTOMATIC RUNTIME ANIMATIONS (Tiggers instantly on page load)
+# 100% Forceful Automatic Animations on page load
 st.snow()
 st.balloons()
 
-# Intense Shifting Red Canvas & Fixed Layout Styles
+# Intense Shifting Red Canvas, Rigid layout & Special Growing Heart Animation
 st.markdown("""
     <style>
     /* 1. LIQUID NEON SHIFTING INTENSE RED BACKGROUND */
@@ -50,7 +50,7 @@ st.markdown("""
         100% { opacity: 1; text-shadow: 0 0 15px #ff7675; }
     }
 
-    /* 3. DYNAMIC GLOW HAPPY BIRTHDAY TITLE WITH INTENSE GREEN MATRIX SHIFT */
+    /* 3. DYNAMIC GLOW HAPPY BIRTHDAY TITLE */
     .giant-neon-birthday {
         font-size: 3.5rem !important;
         font-weight: 900 !important;
@@ -66,7 +66,7 @@ st.markdown("""
         margin-bottom: 25px;
     }
 
-    @webkit-keyframes greenLightShine {
+    @keyframes greenLightShine {
         0% { background-position: 0% 50%; }
         100% { background-position: 100% 50%; }
     }
@@ -140,7 +140,31 @@ st.markdown("""
         100% { transform: scale(1.22) rotate(-3deg); filter: drop-shadow(0 0 45px #ff0000); }
     }
 
-    /* 7. ELITE ENGLISH MOTIVATIONAL SCROLL CARDS */
+    /* 7. MAGIC GROWING MINI HEART ENGINE (Starts from 0 and becomes complete) */
+    .magic-mini-heart-box {
+        margin: 25px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .magic-mini-heart {
+        font-size: 55px;
+        color: #ff004c;
+        display: inline-block;
+        filter: drop-shadow(0 0 15px #ff004c);
+        animation: growToComplete 4s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;
+    }
+
+    @keyframes growToComplete {
+        0% { transform: scale(0); opacity: 0; filter: drop-shadow(0 0 0px #ff004c); }
+        30% { transform: scale(0.5); opacity: 0.5; }
+        60% { transform: scale(1.2); opacity: 1; filter: drop-shadow(0 0 25px #ff4d6d); }
+        80% { transform: scale(1); opacity: 1; }
+        100% { transform: scale(1); opacity: 1; }
+    }
+
+    /* 8. ELITE ENGLISH MOTIVATIONAL SCROLL CARDS */
     .classy-scroll-card {
         background: rgba(30, 0, 4, 0.96);
         font-size: 1.25rem !important;
@@ -171,7 +195,7 @@ st.markdown("""
         margin-bottom: 15px;
     }
 
-    /* 8. TYPEWRITER BOX ENGINE */
+    /* 9. TYPEWRITER BOX ENGINE */
     .typewriter-box {
         margin: 35px 0;
         background: rgba(0, 0, 0, 0.4);
@@ -238,7 +262,7 @@ with col2:
 # THE DYNAMIC FAST DHADAKTA HUA DIL ENGINE
 st.markdown('<div class="heart-engine-box"><span class="ultimate-fast-heart">❤️</span></div>', unsafe_allow_html=True)
 
-# --- REFINED ELITE ENGLISH MOTIVATIONAL BOARDS ---
+# --- FIRST ELITE ENGLISH MOTIVATIONAL BOARD ---
 st.markdown("""
     <div class="classy-scroll-card">
         <span class="chapter-tag">✨ ACADEMIC APPRECIATION ✨</span>
@@ -246,6 +270,10 @@ st.markdown("""
     </div>
 """, unsafe_allow_html=True)
 
+# --- NEW: INTERMEDIATE MAGIC GROWING MINI HEART ANIMATION (Tied between boards) ---
+st.markdown('<div class="magic-mini-heart-box"><span class="magic-mini-heart">❤️</span></div>', unsafe_allow_html=True)
+
+# --- SECOND ELITE ENGLISH MOTIVATIONAL BOARD ---
 st.markdown("""
     <div class="classy-scroll-card">
         <span class="chapter-tag">🚀 THE VISION OF SUCCESS 🏆</span>
